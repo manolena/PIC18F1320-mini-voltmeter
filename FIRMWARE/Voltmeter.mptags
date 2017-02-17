@@ -1,0 +1,254 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+ABDEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	252;"	m	line:252
+ACQT	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	178;"	m	line:178
+ADCS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	177;"	m	line:177
+ADDEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	242;"	m	line:242
+ADFM	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	180;"	m	line:180
+ADIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	349;"	m	line:349
+ADIF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	337;"	m	line:337
+ADIP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	325;"	m	line:325
+ADON	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	161;"	m	line:161
+Adc_Init	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.c	14;"	f	line:14
+Adc_Init	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.h	10;"	p	line:10	signature:()
+Adc_Read	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.c	23;"	f	line:23
+Adc_Read	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.h	11;"	p	line:11	signature:()
+BOR	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	125;"	m	line:125
+BRG16	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	255;"	m	line:255
+BRG6	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	264;"	m	line:264
+BRGH	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	228;"	m	line:228
+CARRY	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	72;"	m	line:72
+CCP1IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	345;"	m	line:345
+CCP1IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	333;"	m	line:333
+CCP1IP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	321;"	m	line:321
+CCP1M	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	186;"	m	line:186
+CFGS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	276;"	m	line:276
+CHS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	163;"	m	line:163
+CREN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	243;"	m	line:243
+CSRC	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	233;"	m	line:233
+ColCount	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	25;"	v	line:25	file:
+Column	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	23;"	v	line:23
+DC	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	73;"	m	line:73
+DC1B	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	187;"	m	line:187
+DELAY_ROUTINE::	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	38;"	d	line:38
+DelayMs	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c	17;"	f	line:17	signature:(unsigned int cnt)
+DelayMs	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	72;"	p	line:72	signature:(unsigned int)
+DelayUs	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	49;"	f	line:49	signature:(unsigned char x)
+DelayUs::(x){unsignedchar_dcnt;	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	62;"	d	line:62
+DelayUs::(x){unsignedchar_dcnt;	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	69;"	d	line:69
+Display	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\defs.h	16;"	p	line:16	signature:()
+Display	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	106;"	f	line:106
+ECCPAS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	203;"	m	line:203
+ECCPASE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	204;"	m	line:204
+EEIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	311;"	m	line:311
+EEIF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	299;"	m	line:299
+EEIP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	287;"	m	line:287
+EEPGD	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	277;"	m	line:277
+FERR	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	241;"	m	line:241
+FLTS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	94;"	m	line:94
+FREE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	274;"	m	line:274
+GIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	35;"	m	line:35
+GIEH	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	40;"	m	line:40
+GIEL	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	39;"	m	line:39
+GODONE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	162;"	m	line:162
+IDLEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	97;"	m	line:97
+INT0IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	32;"	m	line:32
+INT0IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	29;"	m	line:29
+INT1IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	62;"	m	line:62
+INT1IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	59;"	m	line:59
+INT1IP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	65;"	m	line:65
+INT2IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	63;"	m	line:63
+INT2IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	60;"	m	line:60
+INT2IP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	66;"	m	line:66
+INTEDG0	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	52;"	m	line:52
+INTEDG1	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	51;"	m	line:51
+INTEDG2	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	50;"	m	line:50
+IOFS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	101;"	m	line:101
+IPEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	131;"	m	line:131
+IRCF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	96;"	m	line:96
+IRVST	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	113;"	m	line:113
+ISR	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	95;"	f	line:95
+IVRST	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	109;"	m	line:109
+Init	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\defs.h	14;"	p	line:14	signature:()
+Init	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	69;"	f	line:69
+Init_TMR0	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\defs.h	15;"	p	line:15	signature:()
+Init_TMR0	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	79;"	f	line:79
+KHZ::*1	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	45;"	d	line:45
+LATA	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	379;"	m	line:379
+LATB	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	373;"	m	line:373
+LVDEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	108;"	m	line:108
+LVDIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	309;"	m	line:309
+LVDIF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	297;"	m	line:297
+LVDIP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	285;"	m	line:285
+LVDL	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	107;"	m	line:107
+MHZ::*1000	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	44;"	d	line:44
+NEGATIVE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	76;"	m	line:76
+OERR	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	240;"	m	line:240
+OSCFIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	313;"	m	line:313
+OSCFIF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	301;"	m	line:301
+OSCFIP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	289;"	m	line:289
+OSTS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	95;"	m	line:95
+OV	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	75;"	m	line:75
+P1M	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	188;"	m	line:188
+PCFG	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	171;"	m	line:171
+PD	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	127;"	m	line:127
+PDC	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	194;"	m	line:194
+PEIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	34;"	m	line:34
+POR	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	126;"	m	line:126
+PRSEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	195;"	m	line:195
+PSA	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	83;"	m	line:83
+PSSAC	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	202;"	m	line:202
+PSSBD	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	201;"	m	line:201
+PortBit::(port,bit)((unsigned)&(port)*8	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\defs.h	11;"	d	line:11
+RA	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	391;"	m	line:391
+RB	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	385;"	m	line:385
+RBIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	31;"	m	line:31
+RBIF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	28;"	m	line:28
+RBIP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	46;"	m	line:46
+RBPU	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	53;"	m	line:53
+RCIDL	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	258;"	m	line:258
+RCIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	348;"	m	line:348
+RCIF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	336;"	m	line:336
+RCIP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	324;"	m	line:324
+RD	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	270;"	m	line:270
+RI	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	129;"	m	line:129
+RX9	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	245;"	m	line:245
+RX9D	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	239;"	m	line:239
+SCKP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	256;"	m	line:256
+SCS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	93;"	m	line:93
+SENDB	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	229;"	m	line:229
+SPEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	246;"	m	line:246
+SREN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	244;"	m	line:244
+STKFUL	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	22;"	m	line:22
+STKPTR	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	19;"	m	line:19
+STKUNF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	21;"	m	line:21
+SWDTEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	119;"	m	line:119
+SYNC	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	230;"	m	line:230
+SegCode	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	21;"	v	line:21
+Segment	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	24;"	v	line:24	file:
+T08BIT	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	86;"	m	line:86
+T0CS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	85;"	m	line:85
+T0PS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	82;"	m	line:82
+T0SE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	84;"	m	line:84
+T1CKPS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	141;"	m	line:141
+T1OSCEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	140;"	m	line:140
+T1RD16	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	143;"	m	line:143
+T1RD6	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	147;"	m	line:147
+T1RUN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	142;"	m	line:142
+T1SYNC	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	139;"	m	line:139
+T2CKPS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	153;"	m	line:153
+T3CCP1	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	213;"	m	line:213
+T3CCP2	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	215;"	m	line:215
+T3CKPS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	214;"	m	line:214
+T3RD16	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	216;"	m	line:216
+T3RD6	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	220;"	m	line:220
+T3SYNC	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	212;"	m	line:212
+TMR0IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	33;"	m	line:33
+TMR0IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	30;"	m	line:30
+TMR0IP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	48;"	m	line:48
+TMR0ON	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	87;"	m	line:87
+TMR1CS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	138;"	m	line:138
+TMR1IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	343;"	m	line:343
+TMR1IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	331;"	m	line:331
+TMR1IP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	319;"	m	line:319
+TMR1ON	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	137;"	m	line:137
+TMR2IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	344;"	m	line:344
+TMR2IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	332;"	m	line:332
+TMR2IP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	320;"	m	line:320
+TMR2ON	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	154;"	m	line:154
+TMR3CS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	211;"	m	line:211
+TMR3IE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	308;"	m	line:308
+TMR3IF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	296;"	m	line:296
+TMR3IP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	284;"	m	line:284
+TMR3ON	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	210;"	m	line:210
+TO	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	128;"	m	line:128
+TOUTPS	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	155;"	m	line:155
+TRISA	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	367;"	m	line:367
+TRISB	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	361;"	m	line:361
+TRMT	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	227;"	m	line:227
+TUN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	355;"	m	line:355
+TX9	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	232;"	m	line:232
+TX9D	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	226;"	m	line:226
+TXEN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	231;"	m	line:231
+TXIE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	347;"	m	line:347
+TXIF	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	335;"	m	line:335
+TXIP	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	323;"	m	line:323
+VCFG	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	165;"	m	line:165
+W4E	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	253;"	m	line:253
+WR	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	271;"	m	line:271
+WREN	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	272;"	m	line:272
+WRERR	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	273;"	m	line:273
+WUE	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	262;"	m	line:262
+XTAL_FREQ::8MHZ	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	41;"	d	line:41
+ZERO	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	74;"	m	line:74
+_ADC_V3	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	9;"	d	line:9
+_CC_V1	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	10;"	d	line:10
+_EAUSART_V3	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	12;"	d	line:12
+_EEP_V2	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	14;"	d	line:14
+_PTB_V1	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	15;"	d	line:15
+_PWM_V8	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	11;"	d	line:11
+_TMR_V2	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	13;"	d	line:13
+_XTAL_FREQ::8000000	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	19;"	d	line:19	file:
+__ADCON0bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	167;"	t	line:167
+__ADCON1bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	173;"	t	line:173
+__ADCON2bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	182;"	t	line:182
+__BAUDCTLbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	266;"	t	line:266
+__CCP1CONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	190;"	t	line:190
+__ECCPASbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	206;"	t	line:206
+__EECON1bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	279;"	t	line:279
+__INTCON2bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	55;"	t	line:55
+__INTCON3bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	68;"	t	line:68
+__INTCONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	42;"	t	line:42
+__IPR1bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	327;"	t	line:327
+__IPR2bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	291;"	t	line:291
+__LATAbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	381;"	t	line:381
+__LATBbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	375;"	t	line:375
+__LVDCONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	115;"	t	line:115
+__OSCCONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	103;"	t	line:103
+__OSCTUNEbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	357;"	t	line:357
+__PIE1bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	351;"	t	line:351
+__PIE2bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	315;"	t	line:315
+__PIR1bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	339;"	t	line:339
+__PIR2bits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	303;"	t	line:303
+__PORTAbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	393;"	t	line:393
+__PORTBbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	387;"	t	line:387
+__PWM1CONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	197;"	t	line:197
+__RCONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	133;"	t	line:133
+__RCSTAbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	248;"	t	line:248
+__STATUSbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	78;"	t	line:78
+__STKPTRbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	24;"	t	line:24
+__T0CONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	89;"	t	line:89
+__T1CONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	149;"	t	line:149
+__T2CONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	157;"	t	line:157
+__T3CONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	222;"	t	line:222
+__TRISAbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	369;"	t	line:369
+__TRISBbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	363;"	t	line:363
+__TXSTAbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	235;"	t	line:235
+__WDTCONbits_t	C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\18f1320.h	121;"	t	line:121
+_dcnt	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	51;"	l	line:51
+adc_read_volts	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\defs.h	13;"	p	line:13	signature:()
+count	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h	51;"	l	line:51
+d	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	133;"	l	line:133
+decUnits	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	29;"	v	line:29
+digit	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	127;"	l	line:127
+disassemblyFloat	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\defs.h	17;"	p	line:17	signature:(float value)
+disassemblyFloat	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	125;"	f	line:125	signature:(float value)
+hundrends	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	26;"	v	line:26
+i	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c	26;"	l	line:26
+i	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c	35;"	l	line:35
+i	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	131;"	l	line:131
+i	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	31;"	v	line:31
+main	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	41;"	f	line:41	signature:(void)
+places	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	128;"	l	line:128
+result	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	30;"	v	line:30
+tempfloat	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	132;"	l	line:132
+tens	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	129;"	l	line:129
+tenscount	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	130;"	l	line:130
+tenths	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	27;"	v	line:27
+units	C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c	28;"	v	line:28

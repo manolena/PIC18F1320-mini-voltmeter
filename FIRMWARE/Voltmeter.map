@@ -1,0 +1,414 @@
+HI-TECH Software C Compiler 
+
+Linker command line:
+
+\
+  --edf=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\dat\en_msgs.txt \
+  -cs -h+Voltmeter.sym -z -Q18F1320 -ol.obj -MVoltmeter.map -E1 \
+  -ACODE=00h-01FFFh -ALOWCODE=00h-01FFFh -ARAM=00h-0FFh -ABIGRAM=00h-0FFh \
+  -ACOMRAM=00h-07Fh -ANVRAM=00h-0FFh \
+  -preset_vec=00h,intcode=08h,intcodelo,powerup,init,end_init \
+  -plowtext=end_init -pramtop=0100h -ACONFIG=0300000h-030000Dh \
+  -pconfig=CONFIG -AIDLOC=0200000h-0200007h -pidloc=IDLOC \
+  -AEEDATA=0F00000h-0F000FFh -peeprom_data=EEDATA -pconst=end_init+0100h \
+  -ptemp=COMRAM,nvrram=COMRAM,nvbit=COMRAM,rbss=COMRAM,rbit=COMRAM,rdata=COMRAM \
+  -pstruct=COMRAM -pnvram=-NVRAM -AFARRAM=00h-00h \
+  -pfarbss=FARRAM,fardata=FARRAM \
+  -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pparam=RAM -pdata=RAM \
+  -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
+  C:\Users\ADMINI~1\AppData\Local\Temp\sdh8.obj adc.obj delay.obj main.obj \
+  C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\lib\pic80--p.lib \
+  C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\lib\pic090pm.lib \
+  C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\lib\pic82l-c.lib 
+
+Object code version is 3.10
+
+Machine type is 18F1320
+
+Call graph: (short form)
+
+*_main size 0,12 offset 0
+     _Init size 0,0 offset 12
+     _Adc_Init size 0,0 offset 12
+     _Init_TMR0 size 0,0 offset 12
+     _Adc_Read size 0,0 offset 12
+     _DelayMs size 2,0 offset 12
+*    _disassemblyFloat size 3,13 offset 12
+*        ftcmp size 0,0 offset 28
+*        ftmul_f size 0,0 offset 28
+*            ftunpack1 size 0,0 offset 28
+*            ftunpack2 size 0,0 offset 28
+*        ftdiv_f size 0,0 offset 28
+*            ftunpack1 size 0,0 offset 28
+*            ftunpack2 size 0,0 offset 28
+*        ftadd_f size 0,0 offset 28
+*            ftunpack1 size 0,0 offset 28
+*            ftunpack2 size 0,0 offset 28
+*            ftdenorm size 0,0 offset 28
+*        ftmul size 0,0 offset 28
+*            ftunpack1 size 0,0 offset 28
+*            ftunpack2 size 0,0 offset 28
+*        ftdiv size 0,0 offset 28
+*            ftunpack1 size 0,0 offset 28
+*        fttol size 0,0 offset 28
+*            ftunpack1 size 0,0 offset 28
+*            l0neg size 0,0 offset 28
+*        awtoft size 0,0 offset 28
+*        ftsub_f size 0,0 offset 28
+*            ftunpack1 size 0,0 offset 28
+*            ftunpack2 size 0,0 offset 28
+*            ftdenorm size 0,0 offset 28
+*        awdiv size 0,0 offset 28
+     lwtoft size 0,0 offset 12
+*    ftadd_f size 0,0 offset 28
+*    ftdiv size 0,0 offset 28
+*    ftmul size 0,0 offset 28
+
+Estimated maximum call depth: 3
+
+*_ISR size 0,0 offset 28
+*    _Display size 0,0 offset 28
+
+Estimated maximum call depth: 2
+
+
+                Name          Link     Load   Length Selector Space Scale
+C:\Users\ADMINI~1\AppData\Local\Temp\sdh8.obj
+                reset_vec        0        0        6       0     0
+                end_init        44       44        4       4     0
+                init            10       10       34       4     0
+adc.obj         temp             0        0        2       0     1
+                text           A3E      A3E       20      89     0
+delay.obj       text           9EA      9EA       2A      89     0
+main.obj        intcode          8        8        8       4     0
+                ibigdata       10E      10E        3      80     0
+                intsave_r       E5       E5       1B      E5     1
+                bigdata         E1       E1        3      E1     1
+                const          100      100        E      80     0
+                config      300000   300000        C  300000     0
+                temp             0        0        F       0     1
+                bigbss          E4       E4        1      E4     1
+                bss             B8       B8        D      B8     1
+                text           12C      12C      572      89     0
+
+C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\lib\pic80--p.lib
+
+C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\lib\pic090pm.lib
+
+C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\lib\pic82l-c.lib
+awdiv.obj       temp             0        0        7       0     1
+                text           A14      A14       2A      89     0
+btemp0.obj      temp             0        0        1       0     1
+btemp10.obj     temp             0        0        B       0     1
+btemp11.obj     temp             0        0        C       0     1
+btemp12.obj     temp             0        0        D       0     1
+btemp13.obj     temp             0        0        E       0     1
+btemp14.obj     temp             0        0        F       0     1
+btemp1.obj      temp             0        0        2       0     1
+btemp2.obj      temp             0        0        3       0     1
+btemp3.obj      temp             0        0        4       0     1
+btemp4.obj      temp             0        0        5       0     1
+btemp5.obj      temp             0        0        6       0     1
+btemp6.obj      temp             0        0        7       0     1
+btemp7.obj      temp             0        0        8       0     1
+btemp8.obj      temp             0        0        9       0     1
+btemp9.obj      temp             0        0        A       0     1
+float.obj       temp             0        0        9       0     1
+                text           736      736       98      89     0
+fpover.obj      temp             0        0        9       0     1
+                rbit            80       10        4       0     1    8
+ftadd_f.obj     temp             0        0        9       0     1
+                text           A88      A88       14      89     0
+ftadd.obj       temp             0        0        9       0     1
+                text           7CE      7CE       82      89     0
+ftcmp.obj       temp             0        0        9       0     1
+                text           986      986       38      89     0
+ftdiv_f.obj     temp             0        0        9       0     1
+                text           AAC      AAC       10      89     0
+ftdiv.obj       temp             0        0        C       0     1
+                text           850      850       82      89     0
+ftmul_f.obj     temp             0        0        9       0     1
+                text           A9C      A9C       10      89     0
+ftmul.obj       temp             0        0        C       0     1
+                text           69E      69E       98      89     0
+fttol.obj       temp             0        0        9       0     1
+                text           938      938       4E      89     0
+l0neg.obj       temp             0        0        4       0     1
+                text           A74      A74       14      89     0
+ltoft.obj       temp             0        0        9       0     1
+                text           9BE      9BE       2C      89     0
+sbsr0.obj       rbss             F        F        1       0     1
+store3.obj      temp             0        0        4       0     1
+                ftext0         112      112       1A      89     0
+wdiv.obj        temp             0        0        7       0     1
+                text           8D2      8D2       66      89     0
+wtoft.obj       temp             0        0        9       0     1
+                text           A5E      A5E       16      89     0
+
+COMMON          param           C5       C5       1C      C5     1
+
+TOTAL           Name          Link     Load   Length  Space
+        CLASS   CODE           
+                intcode          8        8        8     0
+                reset_vec        0        0        6     0
+                ibigdata       10E      10E        3     0
+                end_init        44       44        4     0
+                init            10       10       34     0
+                const          100      100        E     0
+                text           A3E      A3E       20     0
+                text           9EA      9EA       2A     0
+                text           12C      12C      572     0
+                text           A14      A14       2A     0
+                text           736      736       98     0
+                text           A88      A88       14     0
+                text           7CE      7CE       82     0
+                text           986      986       38     0
+                text           AAC      AAC       10     0
+                text           850      850       82     0
+                text           A9C      A9C       10     0
+                text           69E      69E       98     0
+                text           938      938       4E     0
+                text           A74      A74       14     0
+                text           9BE      9BE       2C     0
+                ftext0         112      112       1A     0
+                text           8D2      8D2       66     0
+                text           A5E      A5E       16     0
+
+        CLASS   LOWCODE        
+
+        CLASS   RAM            
+                param           C5       C5       1C     1
+                bss             B8       B8        D     1
+
+        CLASS   BIGRAM         
+                intsave_r       E5       E5       1B     1
+                bigdata         E1       E1        3     1
+                bigbss          E4       E4        1     1
+
+        CLASS   COMRAM         
+                rbss             F        F        1     1
+                temp             0        0        F     1
+                rbit            80       10        4     1
+
+        CLASS   NVRAM          
+
+        CLASS   CONFIG         
+                config      300000   300000        C     0
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+        CLASS   FARRAM         
+
+
+
+SEGMENTS        Name           Load    Length   Top     Selector    Space Class
+
+                temp            000000  000011  000011         0       1  COMRAM  
+                reset_vec       000000  000006  000006         0       0  CODE    
+                intcode         000008  000040  000048         4       0  CODE    
+                bss             0000B8  00000D  0000C5        B8       1  RAM     
+                param           0000C5  00001C  0000E1        C5       1  RAM     
+                bigdata         0000E1  000003  0000E4        E1       1  BIGRAM  
+                bigbss          0000E4  000001  0000E5        E4       1  BIGRAM  
+                intsave_regs    0000E5  00001B  000100        E5       1  BIGRAM  
+                const           000100  000011  000111        80       0  CODE    
+                ifardata        000112  0009AA  000ABC        89       0  CODE    
+                config          300000  00000C  30000C    300000       0  CONFIG  
+
+
+UNUSED ADDRESS RANGES
+
+        BIGRAM           000011-0000B7
+        CODE             000006-000007
+                         000048-0000FF
+                         000111-000111
+                         000ABC-001FFF
+        COMRAM           000011-00007F
+        CONFIG           30000C-30000D
+        EEDATA           F00000-F000FF
+        IDLOC            200000-200007
+        LOWCODE          000006-000007
+                         000048-0000FF
+                         000111-000111
+                         000ABC-001FFF
+        NVRAM            000011-0000B7
+        RAM              000011-0000B7
+
+                                  Symbol Table
+
+?_DelayMs                 param        0000D1
+?_disassemblyFloat        param        0000D1
+?a_disassemblyFloat       param        0000D4
+?a_main                   param        0000C5
+_Adc_Init                 text         000A3E
+_Adc_Read                 text         000A4E
+_Column                   const        00010B
+_DelayMs                  text         0009EC
+_Display                  text         000374
+_ISR                      text         00028C
+_Init                     text         000266
+_Init_TMR0                text         000276
+_SegCode                  const        000100
+__Bnvbit                  nvbit        00000F
+__Brbit                   rbit         000010
+__HRAM                    (abs)        0000E1
+__Hbigbss                 bigbss       0000E5
+__Hbigdata                bigdata      0000E4
+__Hbss                    bss          000112
+__Hclrtext                clrtext      000112
+__Hconfig                 config       30000C
+__Hconst                  const        00010E
+__Hdata                   data         000011
+__Heeprom_data            eeprom_data  F00000
+__Hend_init               end_init     000048
+__Hfarbss                 farbss       000000
+__Hfardata                fardata      000000
+__Hibigdata               ibigdata     000111
+__Hidata                  idata        00010E
+__Hidloc                  idloc        200000
+__Hifardata               ifardata     000112
+__Hinit                   init         000044
+__Hintcode                intcode      000010
+__Hintcodelo              intcodelo    000010
+__Hintentry               intentry     000112
+__Hintret                 intret       000112
+__Hintsave_regs           intsave_regs 000100
+__Hirdata                 irdata       00010E
+__Hlowtext                lowtext      000048
+__Hnvbit                  nvbit        000078
+__Hnvram                  nvram        000011
+__Hnvrram                 nvrram       00000F
+__Hparam                  param        0000E1
+__Hpowerup                powerup      000010
+__Hramtop                 ramtop       000100
+__Hrbit                   rbit         000084
+__Hrbss                   rbss         000010
+__Hrdata                  rdata        000011
+__Hreset_vec              reset_vec    000006
+__Hstruct                 struct       000011
+__Htemp                   temp         00000F
+__Htext                   text         000112
+__LRAM                    (abs)        0000B8
+__Lbigbss                 bigbss       0000E4
+__Lbigdata                bigdata      0000E1
+__Lbss                    bss          000112
+__Lclrtext                clrtext      000112
+__Lconfig                 config       300000
+__Lconst                  const        000100
+__Ldata                   data         000011
+__Leeprom_data            eeprom_data  F00000
+__Lend_init               end_init     000044
+__Lfarbss                 farbss       000000
+__Lfardata                fardata      000000
+__Libigdata               ibigdata     00010E
+__Lidata                  idata        00010E
+__Lidloc                  idloc        200000
+__Lifardata               ifardata     000112
+__Linit                   init         000010
+__Lintcode                intcode      000008
+__Lintcodelo              intcodelo    000010
+__Lintentry               intentry     000112
+__Lintret                 intret       000112
+__Lintsave_regs           intsave_regs 0000E5
+__Lirdata                 irdata       00010E
+__Llowtext                lowtext      000048
+__Lnvbit                  nvbit        000078
+__Lnvram                  nvram        000011
+__Lnvrram                 nvrram       00000F
+__Lparam                  param        0000C5
+__Lpowerup                powerup      000010
+__Lramtop                 ramtop       000100
+__Lrbit                   rbit         000080
+__Lrbss                   rbss         00000F
+__Lrdata                  rdata        000011
+__Lreset_vec              reset_vec    000000
+__Lstruct                 struct       000011
+__Ltemp                   temp         000000
+__Ltext                   text         000112
+__S0                      (abs)        F00000
+__S1                      (abs)        000100
+__end_of_Adc_Init         text         000A4E
+__end_of_Adc_Read         text         000A5E
+__end_of_DelayMs          text         000A14
+__end_of_Display          text         000422
+__end_of_ISR              text         000374
+__end_of_Init             text         000276
+__end_of_Init_TMR0        text         00028C
+__end_of_disassemblyFloat text         00069E
+__end_of_main             text         000266
+__fpdiv0                  rbit         000082
+__fpover                  rbit         000080
+__fpunder                 rbit         000081
+__ramtop                  ramtop       000100
+_decUnits                 bss          0000B8
+_disassemblyFloat         text         000424
+_exit                     init         000010
+_hundrends                bss          0000BA
+_i                        bss          0000BC
+_main                     text         00012C
+_result                   bss          0000C2
+_tenths                   bss          0000BE
+_units                    bss          0000C0
+altoft                    text         0009BE
+awdiv                     text         000A14
+awmod                     text         000A14
+awtoft                    text         000A5E
+config_word1              config       300000
+config_word2              config       300002
+config_word3              config       300004
+config_word4              config       300006
+config_word5              config       300008
+config_word6              config       30000A
+divide                    text         00085C
+dowdiv                    text         0008D4
+ftadd                     text         000800
+ftadd_f                   text         000A8C
+ftadd_x                   text         000804
+ftcmp                     text         000986
+ftdenorm                  text         0007CE
+ftdiv                     text         000850
+ftdiv_f                   text         000AAC
+ftdiv_x                   text         000854
+ftmul                     text         00069E
+ftmul_f                   text         000A9C
+ftmul_x                   text         0006A2
+ftnorm1                   text         000786
+ftsub                     text         0007FC
+ftsub_f                   text         000A88
+fttol                     text         000938
+ftunpack1                 text         000736
+ftunpack2                 text         000750
+int_func                  text         00028C
+intlevel0                 text         000ABC
+intlevel1                 text         000ABC
+l0neg                     text         000A74
+lltoft                    text         0009CA
+lwdiv                     text         0008D2
+lwmod                     text         0008D2
+lwtoft                    text         000A6C
+restore                   text         00029C
+save                      text         00030A
+saved_bsrh                rbss         00000F
+saveunder                 rbit         000083
+start                     init         000010
+storeback_3               ftext0       000118
+storeback_ct              ftext0       000112
+t0neg                     text         000840
+used_btemp0               (abs)        000001
+used_btemp1               (abs)        000001
+used_btemp10              (abs)        000001
+used_btemp11              (abs)        000001
+used_btemp12              (abs)        000001
+used_btemp13              (abs)        000001
+used_btemp14              (abs)        000001
+used_btemp2               (abs)        000001
+used_btemp3               (abs)        000001
+used_btemp4               (abs)        000001
+used_btemp5               (abs)        000001
+used_btemp6               (abs)        000001
+used_btemp7               (abs)        000001
+used_btemp8               (abs)        000001
+used_btemp9               (abs)        000001
+zerctt                    text         000748

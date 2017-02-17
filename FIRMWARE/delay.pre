@@ -1,0 +1,21 @@
+
+# 1 "C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c"
+
+# 72 "C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.h"
+extern void DelayMs(unsigned int);
+
+# 17 "C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c"
+void DelayMs(unsigned int cnt)
+{
+
+# 35
+unsigned char i;
+do {
+i = 3;
+do {
+{ unsigned char _dcnt; _dcnt = (220)/(12*1000/(8*1000))|1; while(--_dcnt != 0) continue; };
+} while(--i);
+} while(--cnt);
+
+
+}

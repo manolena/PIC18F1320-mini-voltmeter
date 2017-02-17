@@ -1,0 +1,1528 @@
+
+
+HI-TECH Software PICC-18 Macro Assembler V9.51PL3
+                                                       Fri Feb 17 15:37:50 2017
+
+
+     1                           	processor	18F1320
+     2                           	opt	pw 80
+     3                           	psect	const,global,class=CODE,delta=1
+     4                           	psect	bigdata,global,class=BIGRAM,space=1,delta
+      +                          =1
+     5                           	psect	ibigdata,global,class=CODE,delta=1
+     6                           	psect	text,global,reloc=2,class=CODE,delta=1
+     7                           	psect	config,global,class=CONFIG,delta=1
+     8                           	psect	intcode,global,reloc=2,class=CODE,delta=1
+     9                           	psect	bigbss,global,class=BIGRAM,space=1,delta=
+      +                          1
+    10                           	psect	bss,global,class=RAM,space=1,delta=1
+    11                           	psect	temp,global,ovrld,common,class=COMRAM,spa
+      +                          ce=1,delta=1
+    12                           	psect	intsave_regs,global,class=BIGRAM,space=1,
+      +                          delta=1
+    13  000000                     
+    14  000000                     
+    15  000000                     
+    16  000000                     
+    17  000000                     
+    18  000000                     
+    19  000000                     
+    20  000000                     
+    21  000000                     
+    22  000000                     
+    23  000000                     
+    24  000000                     
+    25  000000                     
+    26  000000                     
+    27  000000                     
+    28  000000                     
+    29  000000                     
+    30  000000                     
+    31  000000                     
+    32  000000                     
+    33  000000                     
+    34  000000                     
+    35  000000                     
+    36  000000                     
+    37  000000                     
+    38  000000                     
+    39  000000                     
+    40  000000                     
+    41  000000                     
+    42  000000                     
+    43  000000                     
+    44  000000                     
+    45  000000                     
+    46  000000                     
+    47  000000                     
+    48  000000                     
+    49  000000                     
+    50  000000                     
+    51  000000                     
+    52  000000                     
+    53  000000                     
+    54  000000                     
+    55  000000                     
+    56  000000                     
+    57  000000                     
+    58  000000                     
+    59  000000                     
+    60  000000                     
+    61  000000                     
+    62  000000                     
+    63  000000                     
+    64  000000                     
+    65  000000                     
+    66  000000                     
+    67  000000                     
+    68  000000                     
+    69  000000                     
+    70  000000                     
+    71  000000                     
+    72  000000                     
+    73  000000                     
+    74  000000                     
+    75  000000                     
+    76  000000                     
+    77  000000                     
+    78  000000                     
+    79  000000                     
+    80  000000                     
+    81  000000                     
+    82  000000                     
+    83  000000                     
+    84  000000                     
+    85  000000                     
+    86  000000                     
+    87  000000                     
+    88  000000                     
+    89  000000                     
+    90  000000                     
+    91  000000                     
+    92  000000                     
+    93  000000                     
+    94  000000                     
+    95  000000                     
+    96  000000                     
+    97  000000                     
+    98  000000                     
+    99  000000                     
+   100  000000                     
+   101  000000                     
+   102                           
+   103                           	psect	const
+   104                           ;pic18f1220.h: 19: static volatile near unsigned
+      +                           char TOSU @ 0xFFF;
+   105                           ;pic18f1220.h: 20: static volatile near unsigned
+      +                           char TOSH @ 0xFFE;
+   106                           ;pic18f1220.h: 21: static volatile near unsigned
+      +                           char TOSL @ 0xFFD;
+   107                           ;pic18f1220.h: 22: static volatile near unsigned
+      +                           char STKPTR @ 0xFFC;
+   108                           ;pic18f1220.h: 23: static volatile near unsigned
+      +                           char PCLATU @ 0xFFB;
+   109                           ;pic18f1220.h: 24: static volatile near unsigned
+      +                           char PCLATH @ 0xFFA;
+   110                           ;pic18f1220.h: 25: static volatile near unsigned
+      +                           char PCL @ 0xFF9;
+   111                           ;pic18f1220.h: 26: static volatile far unsigned 
+      +                          char * TBLPTR @ 0xFF6;
+   112                           ;pic18f1220.h: 27: static volatile near unsigned
+      +                           char TBLPTRU @ 0xFF8;
+   113                           ;pic18f1220.h: 28: static volatile near unsigned
+      +                           char TBLPTRH @ 0xFF7;
+   114                           ;pic18f1220.h: 29: static volatile near unsigned
+      +                           char TBLPTRL @ 0xFF6;
+   115                           ;pic18f1220.h: 30: static volatile near unsigned
+      +                           char TABLAT @ 0xFF5;
+   116                           ;pic18f1220.h: 31: static volatile near unsigned
+      +                           char PRODH @ 0xFF4;
+   117                           ;pic18f1220.h: 32: static volatile near unsigned
+      +                           char PRODL @ 0xFF3;
+   118                           ;pic18f1220.h: 33: static volatile near unsigned
+      +                           char INTCON @ 0xFF2;
+   119                           ;pic18f1220.h: 34: static near unsigned char INT
+      +                          CON2 @ 0xFF1;
+   120                           ;pic18f1220.h: 35: static volatile near unsigned
+      +                           char INTCON3 @ 0xFF0;
+   121                           ;pic18f1220.h: 36: static volatile near unsigned
+      +                           char INDF0 @ 0xFEF;
+   122                           ;pic18f1220.h: 37: static volatile near unsigned
+      +                           char POSTINC0 @ 0xFEE;
+   123                           ;pic18f1220.h: 38: static volatile near unsigned
+      +                           char POSTDEC0 @ 0xFED;
+   124                           ;pic18f1220.h: 39: static volatile near unsigned
+      +                           char PREINC0 @ 0xFEC;
+   125                           ;pic18f1220.h: 40: static volatile near unsigned
+      +                           char PLUSW0 @ 0xFEB;
+   126                           ;pic18f1220.h: 41: static volatile near unsigned
+      +                           char FSR0H @ 0xFEA;
+   127                           ;pic18f1220.h: 42: static volatile near unsigned
+      +                           char FSR0L @ 0xFE9;
+   128                           ;pic18f1220.h: 43: static volatile near unsigned
+      +                           char WREG @ 0xFE8;
+   129                           ;pic18f1220.h: 44: static volatile near unsigned
+      +                           char INDF1 @ 0xFE7;
+   130                           ;pic18f1220.h: 45: static volatile near unsigned
+      +                           char POSTINC1 @ 0xFE6;
+   131                           ;pic18f1220.h: 46: static volatile near unsigned
+      +                           char POSTDEC1 @ 0xFE5;
+   132                           ;pic18f1220.h: 47: static volatile near unsigned
+      +                           char PREINC1 @ 0xFE4;
+   133                           ;pic18f1220.h: 48: static volatile near unsigned
+      +                           char PLUSW1 @ 0xFE3;
+   134                           ;pic18f1220.h: 49: static volatile near unsigned
+      +                           char FSR1H @ 0xFE2;
+   135                           ;pic18f1220.h: 50: static volatile near unsigned
+      +                           char FSR1L @ 0xFE1;
+   136                           ;pic18f1220.h: 51: static near unsigned char BSR
+      +                           @ 0xFE0;
+   137                           ;pic18f1220.h: 52: static volatile near unsigned
+      +                           char INDF2 @ 0xFDF;
+   138                           ;pic18f1220.h: 53: static volatile near unsigned
+      +                           char POSTINC2 @ 0xFDE;
+   139                           ;pic18f1220.h: 54: static volatile near unsigned
+      +                           char POSTDEC2 @ 0xFDD;
+   140                           ;pic18f1220.h: 55: static volatile near unsigned
+      +                           char PREINC2 @ 0xFDC;
+   141                           ;pic18f1220.h: 56: static volatile near unsigned
+      +                           char PLUSW2 @ 0xFDB;
+   142                           ;pic18f1220.h: 57: static volatile near unsigned
+      +                           char FSR2H @ 0xFDA;
+   143                           ;pic18f1220.h: 58: static volatile near unsigned
+      +                           char FSR2L @ 0xFD9;
+   144                           ;pic18f1220.h: 59: static volatile near unsigned
+      +                           char STATUS @ 0xFD8;
+   145                           ;pic18f1220.h: 60: static volatile near unsigned
+      +                           int TMR0 @ 0xFD6;
+   146                           ;pic18f1220.h: 61: static volatile near unsigned
+      +                           char TMR0H @ 0xFD7;
+   147                           ;pic18f1220.h: 62: static volatile near unsigned
+      +                           char TMR0L @ 0xFD6;
+   148                           ;pic18f1220.h: 63: static near unsigned char T0C
+      +                          ON @ 0xFD5;
+   149                           ;pic18f1220.h: 64: static volatile near unsigned
+      +                           char OSCCON @ 0xFD3;
+   150                           ;pic18f1220.h: 65: static volatile near unsigned
+      +                           char LVDCON @ 0xFD2;
+   151                           ;pic18f1220.h: 66: static volatile near unsigned
+      +                           char WDTCON @ 0xFD1;
+   152                           ;pic18f1220.h: 67: static volatile near unsigned
+      +                           char RCON @ 0xFD0;
+   153                           ;pic18f1220.h: 68: static volatile near unsigned
+      +                           int TMR1 @ 0xFCE;
+   154                           ;pic18f1220.h: 69: static volatile near unsigned
+      +                           char TMR1H @ 0xFCF;
+   155                           ;pic18f1220.h: 70: static volatile near unsigned
+      +                           char TMR1L @ 0xFCE;
+   156                           ;pic18f1220.h: 71: static near unsigned char T1C
+      +                          ON @ 0xFCD;
+   157                           ;pic18f1220.h: 72: static volatile near unsigned
+      +                           char TMR2 @ 0xFCC;
+   158                           ;pic18f1220.h: 73: static near unsigned char PR2
+      +                           @ 0xFCB;
+   159                           ;pic18f1220.h: 74: static near unsigned char T2C
+      +                          ON @ 0xFCA;
+   160                           ;pic18f1220.h: 75: static volatile near unsigned
+      +                           int ADRES @ 0xFC3;
+   161                           ;pic18f1220.h: 76: static volatile near unsigned
+      +                           char ADRESH @ 0xFC4;
+   162                           ;pic18f1220.h: 77: static volatile near unsigned
+      +                           char ADRESL @ 0xFC3;
+   163                           ;pic18f1220.h: 78: static volatile near unsigned
+      +                           char ADCON0 @ 0xFC2;
+   164                           ;pic18f1220.h: 79: static near unsigned char ADC
+      +                          ON1 @ 0xFC1;
+   165                           ;pic18f1220.h: 80: static near unsigned char ADC
+      +                          ON2 @ 0xFC0;
+   166                           ;pic18f1220.h: 81: static volatile near unsigned
+      +                           int CCPR1 @ 0xFBE;
+   167                           ;pic18f1220.h: 82: static volatile near unsigned
+      +                           char CCPR1H @ 0xFBF;
+   168                           ;pic18f1220.h: 83: static volatile near unsigned
+      +                           char CCPR1L @ 0xFBE;
+   169                           ;pic18f1220.h: 84: static volatile near unsigned
+      +                           char CCP1CON @ 0xFBD;
+   170                           ;pic18f1220.h: 85: static volatile near unsigned
+      +                           char PWM1CON @ 0xFB7;
+   171                           ;pic18f1220.h: 86: static volatile near unsigned
+      +                           char ECCPAS @ 0xFB6;
+   172                           ;pic18f1220.h: 87: static volatile near unsigned
+      +                           int TMR3 @ 0xFB2;
+   173                           ;pic18f1220.h: 88: static volatile near unsigned
+      +                           char TMR3H @ 0xFB3;
+   174                           ;pic18f1220.h: 89: static volatile near unsigned
+      +                           char TMR3L @ 0xFB2;
+   175                           ;pic18f1220.h: 90: static near unsigned char T3C
+      +                          ON @ 0xFB1;
+   176                           ;pic18f1220.h: 91: static near unsigned char SPB
+      +                          RGH @ 0xFB0;
+   177                           ;pic18f1220.h: 92: static near unsigned char SPB
+      +                          RG @ 0xFAF;
+   178                           ;pic18f1220.h: 93: static volatile near unsigned
+      +                           char RCREG @ 0xFAE;
+   179                           ;pic18f1220.h: 94: static volatile near unsigned
+      +                           char TXREG @ 0xFAD;
+   180                           ;pic18f1220.h: 95: static volatile near unsigned
+      +                           char TXSTA @ 0xFAC;
+   181                           ;pic18f1220.h: 96: static volatile near unsigned
+      +                           char RCSTA @ 0xFAB;
+   182                           ;pic18f1220.h: 97: static volatile near unsigned
+      +                           char BAUDCTL @ 0xFAA;
+   183                           ;pic18f1220.h: 98: static near unsigned char EEA
+      +                          DR @ 0xFA9;
+   184                           ;pic18f1220.h: 99: static volatile near unsigned
+      +                           char EEDATA @ 0xFA8;
+   185                           ;pic18f1220.h: 100: static volatile near unsigne
+      +                          d char EECON2 @ 0xFA7;
+   186                           ;pic18f1220.h: 101: static volatile near unsigne
+      +                          d char EECON1 @ 0xFA6;
+   187                           ;pic18f1220.h: 102: static near unsigned char IP
+      +                          R2 @ 0xFA2;
+   188                           ;pic18f1220.h: 103: static volatile near unsigne
+      +                          d char PIR2 @ 0xFA1;
+   189                           ;pic18f1220.h: 104: static near unsigned char PI
+      +                          E2 @ 0xFA0;
+   190                           ;pic18f1220.h: 105: static near unsigned char IP
+      +                          R1 @ 0xF9F;
+   191                           ;pic18f1220.h: 106: static volatile near unsigne
+      +                          d char PIR1 @ 0xF9E;
+   192                           ;pic18f1220.h: 107: static near unsigned char PI
+      +                          E1 @ 0xF9D;
+   193                           ;pic18f1220.h: 108: static near unsigned char OS
+      +                          CTUNE @ 0xF9B;
+   194                           ;pic18f1220.h: 109: static volatile near unsigne
+      +                          d char TRISB @ 0xF93;
+   195                           ;pic18f1220.h: 110: static volatile near unsigne
+      +                          d char TRISA @ 0xF92;
+   196                           ;pic18f1220.h: 111: static volatile near unsigne
+      +                          d char LATB @ 0xF8A;
+   197                           ;pic18f1220.h: 112: static volatile near unsigne
+      +                          d char LATA @ 0xF89;
+   198                           ;pic18f1220.h: 113: static volatile near unsigne
+      +                          d char PORTB @ 0xF81;
+   199                           ;pic18f1220.h: 114: static volatile near unsigne
+      +                          d char PORTA @ 0xF80;
+   200                           ;pic18f1220.h: 118: static volatile near bit STK
+      +                          UNF @ ((unsigned)&STKPTR*8)+6;
+   201                           ;pic18f1220.h: 119: static volatile near bit STK
+      +                          FUL @ ((unsigned)&STKPTR*8)+7;
+   202                           ;pic18f1220.h: 122: static volatile near bit RBI
+      +                          F @ ((unsigned)&INTCON*8)+0;
+   203                           ;pic18f1220.h: 123: static volatile near bit INT
+      +                          0IF @ ((unsigned)&INTCON*8)+1;
+   204  000100                     _SegCode:
+   205  000100  40                 	db	64
+   206  000101  79                 	db	121
+   207  000102  24                 	db	36
+   208  000103  30                 	db	48
+   209  000104  19                 	db	25
+   210  000105  12                 	db	18
+   211  000106  02                 	db	2
+   212  000107  78                 	db	120
+   213  000108  00                 	db	0
+   214  000109  10                 	db	16
+   215  00010A  FF                 	db	-1
+   216                           ;main.c: 21: const char SegCode[11] = {0x40,0x79
+      +                          ,0x24,0x30,0x19,0x12,0x02,0x78,0x00,0x10,0xFF};
+   217  00010B                     _Column:
+   218  00010B  06                 	db	6
+   219  00010C  0A                 	db	10
+   220  00010D  0C                 	db	12
+   221                           
+   222                           	psect	bigdata
+   223                           ;main.c: 23: const char Column[3] = {0x06,0x0A,0
+      +                          x0C};
+   224  0000E1                     _Segment:
+   225  0000E1                     	ds	1
+   226  0000E1                     	ds	1
+   227  0000E1                     	ds	1
+   228                           
+   229                           	psect	ibigdata
+   230  00010E  06                 	db	6
+   231  00010F  0A                 	db	10
+   232  000110  0C                 	db	12	;#
+   233                           
+   234                           	psect	text
+   235                           ;main.c: 41: void main(void)
+   236                           ;main.c: 42: {
+   237  00012C                     _main:
+   238                           ;	_tempfloat assigned to ?a_disassemblyFloat+10
+   239  000000                     _disassemblyFloat$tempfloat	set	?a_disassemblyFl
+      +                          oat+10
+   240                           ;	_tens assigned to ?a_disassemblyFloat+7
+   241  000000                     _disassemblyFloat$tens	set	?a_disassemblyFloat+7
+   242                           ;	_d assigned to ?a_disassemblyFloat+4
+   243  000000                     _disassemblyFloat$d	set	?a_disassemblyFloat+4
+   244                           ;	_digit assigned to ?a_disassemblyFloat+2
+   245  000000                     _disassemblyFloat$digit	set	?a_disassemblyFloat+
+      +                          2
+   246                           ;	_places assigned to ?a_disassemblyFloat+0
+   247  000000                     _disassemblyFloat$places	set	?a_disassemblyFloat
+   248  000000                     
+   249                           ;main.c: 43: Init();
+   250  00012C  D89C               	call	_Init	;wreg free
+   251                           ;main.c: 44: Adc_Init();
+   252  00012E  EC1F  F005         	call	_Adc_Init	;wreg free
+   253                           ;main.c: 45: Init_TMR0();
+   254  000132  D8A1               	call	_Init_TMR0	;wreg free
+   255  000134                     l4:
+   256                           ;main.c: 47: while(1)
+   257                           ;main.c: 48: {
+   258  000134  EE00  F0C2         	lfsr	0,_result
+   259  000138  6AEE               	clrf	postinc0,c
+   260  00013A  6AEE               	clrf	postinc0,c
+   261  00013C  6AEE               	clrf	postinc0,c
+   262                           ;main.c: 50: for (i=0;i<250;i++)
+   263  00013E  EE00  F0BC         	lfsr	0,_i
+   264  000142  6AEE               	clrf	postinc0,c
+   265  000144  6AEE               	clrf	postinc0,c
+   266  000146                     L1:
+   267  000146  0E00               	movlw	0
+   268  000148  5DBD               	subwf	(_i+1)& (0+255),w,b
+   269  00014A  0EFA               	movlw	250
+   270  00014C  B4D8               	btfsc	status,2,c
+   271  00014E  5DBC               	subwf	_i& (0+255),w,b
+   272  000150  E219               	bc	l7
+   273                           ;main.c: 51: {
+   274  000152  0E01               	movlw	1
+   275  000154  6E92               	movwf	3986,c	;volatile
+   276                           ;main.c: 53: result=result+Adc_Read();
+   277  000156  EC27  F005         	call	_Adc_Read	;wreg free
+   278  00015A  EC36  F005         	call	lwtoft
+   279  00015E  C000  F003         	movff	btemp,btemp+3
+   280  000162  C001  F004         	movff	btemp+1,btemp+4
+   281  000166  C002  F005         	movff	btemp+2,btemp+5
+   282  00016A  EE00  F0C2         	lfsr	0,_result
+   283  00016E  EC46  F005         	call	ftadd_f
+   284                           ;main.c: 54: DelayMs(1);
+   285  000172  0E01               	movlw	1
+   286  000174  6FD1               	movwf	?_DelayMs^(__Lparam& (0+65280)),b
+   287  000176  6BD2               	clrf	(?_DelayMs+1)^(__Lparam& (0+65280)),b
+   288  000178  ECF6  F004         	call	_DelayMs	;wreg free
+   289  00017C  2BBC               	incf	_i& (0+255),f,b
+   290  00017E  0E00               	movlw	0
+   291  000180  23BD               	addwfc	(_i+1)& (0+255),f,b
+   292  000182  D7E1               	goto	L1
+   293  000184                     l7:
+   294                           ;main.c: 55: }
+   295  000184  6A92               	clrf	3986,c	;volatile
+   296                           ;main.c: 57: PORTA=0b01111110;
+   297  000186  0E7E               	movlw	126
+   298  000188  6E80               	movwf	3968,c	;volatile
+   299                           ;main.c: 58: PORTB=0b11111111;
+   300  00018A  6881               	setf	3969,c	;volatile
+   301                           ;main.c: 59: result= ((result/1023)*11.4*10)/250
+      +                          ;
+   302  00018C  6A00               	clrf	btemp,c
+   303  00018E  0E7A               	movlw	122
+   304  000190  6E01               	movwf	btemp+1,c
+   305  000192  0E43               	movlw	67
+   306  000194  6E02               	movwf	btemp+2,c
+   307  000196  C000  F0C5         	movff	btemp,?a_main
+   308  00019A  C001  F0C6         	movff	btemp+1,?a_main+1
+   309  00019E  C002  F0C7         	movff	btemp+2,?a_main+2
+   310  0001A2  6A00               	clrf	btemp,c
+   311  0001A4  0E20               	movlw	32
+   312  0001A6  6E01               	movwf	btemp+1,c
+   313  0001A8  0E41               	movlw	65
+   314  0001AA  6E02               	movwf	btemp+2,c
+   315  0001AC  C000  F0C8         	movff	btemp,?a_main+3
+   316  0001B0  C001  F0C9         	movff	btemp+1,?a_main+4
+   317  0001B4  C002  F0CA         	movff	btemp+2,?a_main+5
+   318  0001B8  0E66               	movlw	102
+   319  0001BA  6E00               	movwf	btemp,c
+   320  0001BC  0E36               	movlw	54
+   321  0001BE  6E01               	movwf	btemp+1,c
+   322  0001C0  0E41               	movlw	65
+   323  0001C2  6E02               	movwf	btemp+2,c
+   324  0001C4  C000  F0CB         	movff	btemp,?a_main+6
+   325  0001C8  C001  F0CC         	movff	btemp+1,?a_main+7
+   326  0001CC  C002  F0CD         	movff	btemp+2,?a_main+8
+   327  0001D0  0EC0               	movlw	192
+   328  0001D2  6E00               	movwf	btemp,c
+   329  0001D4  0E7F               	movlw	127
+   330  0001D6  6E01               	movwf	btemp+1,c
+   331  0001D8  0E44               	movlw	68
+   332  0001DA  6E02               	movwf	btemp+2,c
+   333  0001DC  C000  F0CE         	movff	btemp,?a_main+9
+   334  0001E0  C001  F0CF         	movff	btemp+1,?a_main+10
+   335  0001E4  C002  F0D0         	movff	btemp+2,?a_main+11
+   336  0001E8  C0C2  F000         	movff	_result,btemp
+   337  0001EC  C0C3  F001         	movff	_result+1,btemp+1
+   338  0001F0  C0C4  F002         	movff	_result+2,btemp+2
+   339  0001F4  C0CE  F003         	movff	?a_main+9,btemp+3
+   340  0001F8  C0CF  F004         	movff	?a_main+10,btemp+4
+   341  0001FC  C0D0  F005         	movff	?a_main+11,btemp+5
+   342  000200  EC28  F004         	call	ftdiv
+   343  000204  C0CB  F003         	movff	?a_main+6,btemp+3
+   344  000208  C0CC  F004         	movff	?a_main+7,btemp+4
+   345  00020C  C0CD  F005         	movff	?a_main+8,btemp+5
+   346  000210  EC4F  F003         	call	ftmul
+   347  000214  C0C8  F003         	movff	?a_main+3,btemp+3
+   348  000218  C0C9  F004         	movff	?a_main+4,btemp+4
+   349  00021C  C0CA  F005         	movff	?a_main+5,btemp+5
+   350  000220  EC4F  F003         	call	ftmul
+   351  000224  C0C5  F003         	movff	?a_main,btemp+3
+   352  000228  C0C6  F004         	movff	?a_main+1,btemp+4
+   353  00022C  C0C7  F005         	movff	?a_main+2,btemp+5
+   354  000230  EC28  F004         	call	ftdiv
+   355  000234  C000  F0C2         	movff	btemp,_result
+   356  000238  C001  F0C3         	movff	btemp+1,_result+1
+   357  00023C  C002  F0C4         	movff	btemp+2,_result+2
+   358                           ;main.c: 61: result = 10.2;
+   359  000240  0E33               	movlw	51
+   360  000242  6FC2               	movwf	_result& (0+255),b
+   361  000244  0E23               	movlw	35
+   362  000246  6FC3               	movwf	(_result+1)& (0+255),b
+   363  000248  0E41               	movlw	65
+   364  00024A  6FC4               	movwf	(_result+2)& (0+255),b
+   365                           ;main.c: 62: disassemblyFloat(result);
+   366  00024C  C0C2  F0D1         	movff	_result,?_disassemblyFloat
+   367  000250  C0C3  F0D2         	movff	_result+1,?_disassemblyFloat+1
+   368  000254  C0C4  F0D3         	movff	_result+2,?_disassemblyFloat+2
+   369  000258  D8E5               	call	_disassemblyFloat	;wreg free
+   370                           ;main.c: 63: DelayMs(200);
+   371  00025A  0EC8               	movlw	200
+   372  00025C  6FD1               	movwf	?_DelayMs^(__Lparam& (0+65280)),b
+   373  00025E  6BD2               	clrf	(?_DelayMs+1)^(__Lparam& (0+65280)),b
+   374  000260  ECF6  F004         	call	_DelayMs	;wreg free
+   375  000264  D767               	goto	l4
+   376  000266                     __end_of_main:
+   377                           ;main.c: 69: void Init()
+   378                           ;main.c: 70: {
+   379  000266                     _Init:
+   380  000000                     
+   381                           ;main.c: 71: OSCTUNE=0x1F;
+   382  000266  0E1F               	movlw	31
+   383  000268  6E9B               	movwf	3995,c
+   384                           ;main.c: 72: OSCCON=0x72;
+   385  00026A  0E72               	movlw	114
+   386  00026C  6ED3               	movwf	4051,c	;volatile
+   387                           ;main.c: 73: TRISA=0b00000001;
+   388  00026E  0E01               	movlw	1
+   389  000270  6E92               	movwf	3986,c	;volatile
+   390                           ;main.c: 74: TRISB=0b00000000;
+   391  000272  6A93               	clrf	3987,c	;volatile
+   392                           ;main.c: 75: }
+   393  000274  0012               	return	
+   394  000276                     __end_of_Init:
+   395                           ;main.c: 79: void Init_TMR0()
+   396                           ;main.c: 80: {
+   397  000276                     _Init_TMR0:
+   398  000000                     
+   399                           ;main.c: 81: T0PS0=0;
+   400  000276  90D5               	bcf	4053,0,c
+   401                           ;main.c: 82: T0PS1=1;
+   402  000278  82D5               	bsf	4053,1,c
+   403                           ;main.c: 83: T0PS2=1;
+   404  00027A  84D5               	bsf	4053,2,c
+   405                           ;main.c: 84: PSA=0;
+   406  00027C  96D5               	bcf	4053,3,c
+   407                           ;main.c: 85: T0CS=0;
+   408  00027E  9AD5               	bcf	4053,5,c
+   409                           ;main.c: 86: T08BIT=1;
+   410  000280  8CD5               	bsf	4053,6,c
+   411                           ;main.c: 87: TMR0IE=1;
+   412  000282  8AF2               	bsf	intcon,5,c
+   413                           ;main.c: 88: PEIE=1;
+   414  000284  8CF2               	bsf	intcon,6,c
+   415                           ;main.c: 89: GIE=1;
+   416  000286  8EF2               	bsf	intcon,7,c
+   417                           ;main.c: 90: TMR0ON=1;
+   418  000288  8ED5               	bsf	4053,7,c
+   419                           ;main.c: 91: }
+   420  00028A  0012               	return	
+   421  00028C                     __end_of_Init_TMR0:
+   422                           ;main.c: 95: void interrupt ISR()
+   423                           ;main.c: 96: {
+   424  00028C                     _ISR:
+   425  00028C                     int_func:
+   426  000000                     
+   427                           ;main.c: 97: if(TMR0IE && TMR0IF)
+   428  00028C  BAF2               	btfsc	intcon,5,c
+   429  00028E  A4F2               	btfss	intcon,2,c	;volatile
+   430  000290  D005               	goto	restore
+   431                           ;main.c: 98: {
+   432  000292  D870               	call	_Display	;wreg free
+   433                           ;main.c: 100: TMR0IF=0;
+   434  000294  94F2               	bcf	intcon,2,c	;volatile
+   435                           ;main.c: 101: TMR0H=0;
+   436  000296  6AD7               	clrf	4055,c	;volatile
+   437                           ;main.c: 102: TMR0L=250;
+   438  000298  0EFA               	movlw	250
+   439  00029A  6ED6               	movwf	4054,c	;volatile
+   440                           ;main.c: 103: }
+   441  00029C                     restore:
+   442  00029C  C0E5  FFF3         	movff	saved_regsh,prodl
+   443  0002A0  C0E6  FFF4         	movff	saved_regsh+1,prodh
+   444  0002A4  C0E7  FFF5         	movff	saved_regsh+2,tablat
+   445  0002A8  C0E8  FFF6         	movff	saved_regsh+3,tblptrl
+   446  0002AC  C0E9  FFF7         	movff	saved_regsh+4,tblptrh
+   447  0002B0  C0EA  F000         	movff	saved_regsh+5,btemp
+   448  0002B4  C0EB  F001         	movff	saved_regsh+6,btemp+1
+   449  0002B8  C0EC  F002         	movff	saved_regsh+7,btemp+2
+   450  0002BC  C0ED  F003         	movff	saved_regsh+8,btemp+3
+   451  0002C0  C0EE  F004         	movff	saved_regsh+9,btemp+4
+   452  0002C4  C0EF  F005         	movff	saved_regsh+10,btemp+5
+   453  0002C8  C0F0  F006         	movff	saved_regsh+11,btemp+6
+   454  0002CC  C0F1  F007         	movff	saved_regsh+12,btemp+7
+   455  0002D0  C0F2  F008         	movff	saved_regsh+13,btemp+8
+   456  0002D4  C0F3  F009         	movff	saved_regsh+14,btemp+9
+   457  0002D8  C0F4  F00A         	movff	saved_regsh+15,btemp+10
+   458  0002DC  C0F5  F00B         	movff	saved_regsh+16,btemp+11
+   459  0002E0  C0F6  F00C         	movff	saved_regsh+17,btemp+12
+   460  0002E4  C0F7  F00D         	movff	saved_regsh+18,btemp+13
+   461  0002E8  C0F8  F00E         	movff	saved_regsh+19,btemp+14
+   462  0002EC  C0F9  FFDA         	movff	saved_regsh+20,fsr2h
+   463  0002F0  C0FA  FFD9         	movff	saved_regsh+21,fsr2l
+   464  0002F4  C0FB  FFE2         	movff	saved_regsh+22,fsr1h
+   465  0002F8  C0FC  FFE1         	movff	saved_regsh+23,fsr1l
+   466  0002FC  C0FD  FFEA         	movff	saved_regsh+24,fsr0h
+   467  000300  C0FE  FFE9         	movff	saved_regsh+25,fsr0l
+   468  000304  C0FF  FFFA         	movff	saved_regsh+26,pclath
+   469  000308  0011               	retfie		f
+   470  00030A                     save:
+   471  00030A  CFE9 F0FE          	movff	fsr0l,saved_regsh+25
+   472  00030E  CFEA F0FD          	movff	fsr0h,saved_regsh+24
+   473  000312  CFE1 F0FC          	movff	fsr1l,saved_regsh+23
+   474  000316  CFE2 F0FB          	movff	fsr1h,saved_regsh+22
+   475  00031A  CFD9 F0FA          	movff	fsr2l,saved_regsh+21
+   476  00031E  CFDA F0F9          	movff	fsr2h,saved_regsh+20
+   477  000322  C00E  F0F8         	movff	btemp+14,saved_regsh+19
+   478  000326  C00D  F0F7         	movff	btemp+13,saved_regsh+18
+   479  00032A  C00C  F0F6         	movff	btemp+12,saved_regsh+17
+   480  00032E  C00B  F0F5         	movff	btemp+11,saved_regsh+16
+   481  000332  C00A  F0F4         	movff	btemp+10,saved_regsh+15
+   482  000336  C009  F0F3         	movff	btemp+9,saved_regsh+14
+   483  00033A  C008  F0F2         	movff	btemp+8,saved_regsh+13
+   484  00033E  C007  F0F1         	movff	btemp+7,saved_regsh+12
+   485  000342  C006  F0F0         	movff	btemp+6,saved_regsh+11
+   486  000346  C005  F0EF         	movff	btemp+5,saved_regsh+10
+   487  00034A  C004  F0EE         	movff	btemp+4,saved_regsh+9
+   488  00034E  C003  F0ED         	movff	btemp+3,saved_regsh+8
+   489  000352  C002  F0EC         	movff	btemp+2,saved_regsh+7
+   490  000356  C001  F0EB         	movff	btemp+1,saved_regsh+6
+   491  00035A  C000  F0EA         	movff	btemp,saved_regsh+5
+   492  00035E  CFF7 F0E9          	movff	tblptrh,saved_regsh+4
+   493  000362  CFF6 F0E8          	movff	tblptrl,saved_regsh+3
+   494  000366  CFF5 F0E7          	movff	tablat,saved_regsh+2
+   495  00036A  CFF4 F0E6          	movff	prodh,saved_regsh+1
+   496  00036E  CFF3 F0E5          	movff	prodl,saved_regsh
+   497  000372  D78C               	goto	int_func
+   498  000374                     __end_of_ISR:
+   499                           ;main.c: 106: void Display()
+   500                           ;main.c: 107: {
+   501  000374                     _Display:
+   502  000000                     
+   503                           ;main.c: 108: PORTB=0B11111111;
+   504  000374  6881               	setf	3969,c	;volatile
+   505                           ;main.c: 109: if (ColCount>=3)
+   506  000376  0E02               	movlw	2
+   507  000378  65E4               	cpfsgt	_ColCount& (0+255),b
+   508  00037A  D001               	goto	l14
+   509                           ;main.c: 110: ColCount=0;
+   510  00037C  6BE4               	clrf	_ColCount& (0+255),b
+   511  00037E                     l14:
+   512                           ;main.c: 111: PORTA = Column[ColCount];
+   513  00037E  C0E4  F000         	movff	_ColCount,btemp
+   514  000382  6A01               	clrf	btemp+1,c
+   515  000384  5000               	movf	btemp,w,c
+   516  000386  0F0B               	addlw	low _Column
+   517  000388  6EF6               	movwf	tblptrl,c
+   518  00038A  5001               	movf	btemp+1,w,c
+   519  00038C  6EF7               	movwf	tblptrh,c
+   520  00038E  0E01               	movlw	high _Column
+   521  000390  22F7               	addwfc	tblptrh,f,c
+   522  000392  0008               	tblrd		*
+   523  000394  50F5               	movf	tablat,w,c
+   524  000396  6E80               	movwf	3968,c	;volatile
+   525                           ;main.c: 112: { unsigned char _dcnt; _dcnt = (90
+      +                          0)/(12*1000/(8*1000))|1; while(--_dcnt != 0) con
+      +                          tinue; };
+   526  000398  0E85               	movlw	133
+   527  00039A  6ED9               	movwf	fsr2l,c
+   528  00039C                     l16:
+   529  00039C  2ED9               	decfsz	fsr2l,f,c
+   530  00039E  D7FE               	goto	l16
+   531                           ;main.c: 113: PORTB=0B11111111;
+   532  0003A0  6881               	setf	3969,c	;volatile
+   533                           ;main.c: 114: { unsigned char _dcnt; _dcnt = (60
+      +                          0)/(12*1000/(8*1000))|1; while(--_dcnt != 0) con
+      +                          tinue; };
+   534  0003A2  0E59               	movlw	89
+   535  0003A4  6ED9               	movwf	fsr2l,c
+   536  0003A6                     l19:
+   537  0003A6  2ED9               	decfsz	fsr2l,f,c
+   538  0003A8  D7FE               	goto	l19
+   539                           ;main.c: 115: PORTB = 0b11111111;
+   540  0003AA  6881               	setf	3969,c	;volatile
+   541                           ;main.c: 116: Segment[0]=SegCode[tenths];
+   542  0003AC  C0BE  F000         	movff	_tenths,btemp
+   543  0003B0  C0BF  F001         	movff	_tenths+1,btemp+1
+   544  0003B4  5000               	movf	btemp,w,c
+   545  0003B6  0F00               	addlw	low _SegCode
+   546  0003B8  6EF6               	movwf	tblptrl,c
+   547  0003BA  5001               	movf	btemp+1,w,c
+   548  0003BC  6EF7               	movwf	tblptrh,c
+   549  0003BE  0E01               	movlw	high _SegCode
+   550  0003C0  22F7               	addwfc	tblptrh,f,c
+   551  0003C2  0008               	tblrd		*
+   552  0003C4  CFF5 F0E1          	movff	tablat,_Segment
+   553                           ;main.c: 117: Segment[1]=SegCode[units];
+   554  0003C8  C0C0  F000         	movff	_units,btemp
+   555  0003CC  C0C1  F001         	movff	_units+1,btemp+1
+   556  0003D0  5000               	movf	btemp,w,c
+   557  0003D2  0F00               	addlw	low _SegCode
+   558  0003D4  6EF6               	movwf	tblptrl,c
+   559  0003D6  5001               	movf	btemp+1,w,c
+   560  0003D8  6EF7               	movwf	tblptrh,c
+   561  0003DA  0E01               	movlw	high _SegCode
+   562  0003DC  22F7               	addwfc	tblptrh,f,c
+   563  0003DE  0008               	tblrd		*
+   564  0003E0  CFF5 F0E2          	movff	tablat,_Segment+1
+   565                           ;main.c: 118: Segment[2]=SegCode[decUnits];
+   566  0003E4  C0B8  F000         	movff	_decUnits,btemp
+   567  0003E8  C0B9  F001         	movff	_decUnits+1,btemp+1
+   568  0003EC  5000               	movf	btemp,w,c
+   569  0003EE  0F00               	addlw	low _SegCode
+   570  0003F0  6EF6               	movwf	tblptrl,c
+   571  0003F2  5001               	movf	btemp+1,w,c
+   572  0003F4  6EF7               	movwf	tblptrh,c
+   573  0003F6  0E01               	movlw	high _SegCode
+   574  0003F8  22F7               	addwfc	tblptrh,f,c
+   575  0003FA  0008               	tblrd		*
+   576  0003FC  CFF5 F0E3          	movff	tablat,_Segment+2
+   577                           ;main.c: 119: PORTB = Segment[ColCount];
+   578  000400  C0E4  FFE8         	movff	_ColCount,wreg
+   579  000404  EE20  F0E1         	lfsr	2,_Segment
+   580  000408  26D9               	addwf	fsr2l,f,c
+   581  00040A  0E00               	movlw	0
+   582  00040C  22DA               	addwfc	fsr2h,f,c
+   583  00040E  50DF               	movf	indf2,w,c
+   584  000410  6E81               	movwf	3969,c	;volatile
+   585                           ;main.c: 120: { unsigned char _dcnt; _dcnt = (60
+      +                          0)/(12*1000/(8*1000))|1; while(--_dcnt != 0) con
+      +                          tinue; };
+   586  000412  0E59               	movlw	89
+   587  000414  6ED9               	movwf	fsr2l,c
+   588  000416                     l22:
+   589  000416  2ED9               	decfsz	fsr2l,f,c
+   590  000418  D7FE               	goto	l22
+   591                           ;main.c: 121: PORTB = 0b01111111;
+   592  00041A  0E7F               	movlw	127
+   593  00041C  6E81               	movwf	3969,c	;volatile
+   594                           ;main.c: 122: ColCount++;
+   595  00041E  2BE4               	incf	_ColCount& (0+255),f,b
+   596                           ;main.c: 123: }
+   597  000420  0C01               	retlw	1
+   598  000422                     __end_of_Display:
+   599                           ;       param _value assigned to ?_disassemblyFl
+      +                          oat+0
+   600  000000                     _disassemblyFloat$value	set	?_disassemblyFloat
+   601                           ;main.c: 125: void disassemblyFloat(float value)
+   602                           ;main.c: 126: {
+   603  000422  00D1               	dw	?_disassemblyFloat
+   604  000424                     _disassemblyFloat:
+   605  000000                     
+   606                           ;main.c: 127: int digit;
+   607  000424  0E01               	movlw	1
+   608  000426  6FD4               	movwf	?a_disassemblyFloat^(__Lparam& (0+65280))
+      +                          ,b
+   609  000428  6BD5               	clrf	(?a_disassemblyFloat+1)^(__Lparam& (0+6528
+      +                          0)),b
+   610                           ;main.c: 129: float tens = 0.1;
+   611  00042A  0ECD               	movlw	205
+   612  00042C  6FDB               	movwf	(?a_disassemblyFloat+7)^(__Lparam& (0+652
+      +                          80)),b
+   613  00042E  0ECC               	movlw	204
+   614  000430  6FDC               	movwf	(?a_disassemblyFloat+8)^(__Lparam& (0+652
+      +                          80)),b
+   615  000432  0E3D               	movlw	61
+   616  000434  6FDD               	movwf	(?a_disassemblyFloat+9)^(__Lparam& (0+652
+      +                          80)),b
+   617                           ;main.c: 130: int tenscount = 0;
+   618  000436  6AF6               	clrf	tblptrl,c
+   619  000438  6AF7               	clrf	tblptrh,c
+   620                           ;main.c: 131: int i;
+   621  00043A  C0D1  F0DE         	movff	?_disassemblyFloat,?a_disassemblyFloat+10
+   622  00043E  C0D2  F0DF         	movff	?_disassemblyFloat+1,?a_disassemblyFloat+
+      +                          11
+   623  000442  C0D3  F0E0         	movff	?_disassemblyFloat+2,?a_disassemblyFloat+
+      +                          12
+   624                           ;main.c: 133: float d = 0.5;
+   625  000446  6BD8               	clrf	(?a_disassemblyFloat+4)^(__Lparam& (0+6528
+      +                          0)),b
+   626  000448  6BD9               	clrf	(?a_disassemblyFloat+5)^(__Lparam& (0+6528
+      +                          0)),b
+   627  00044A  0E3F               	movlw	63
+   628  00044C  6FDA               	movwf	(?a_disassemblyFloat+6)^(__Lparam& (0+652
+      +                          80)),b
+   629                           ;main.c: 134: if (value < 0) d *= -1.0;
+   630  00044E  0E00               	movlw	0
+   631  000450  6A03               	clrf	btemp+3,c
+   632  000452  6A04               	clrf	btemp+4,c
+   633  000454  6A05               	clrf	btemp+5,c
+   634  000456  C0D1  F000         	movff	?_disassemblyFloat,btemp
+   635  00045A  C0D2  F001         	movff	?_disassemblyFloat+1,btemp+1
+   636  00045E  C0D3  F002         	movff	?_disassemblyFloat+2,btemp+2
+   637  000462  ECC3  F004         	call	ftcmp
+   638  000466  E20B               	bc	l25
+   639  000468  6A03               	clrf	btemp+3,c
+   640  00046A  0E80               	movlw	128
+   641  00046C  6E04               	movwf	btemp+4,c
+   642  00046E  0EBF               	movlw	191
+   643  000470  6E05               	movwf	btemp+5,c
+   644  000472  0ED8               	movlw	low (?a_disassemblyFloat+4)
+   645  000474  6EE9               	movwf	fsr0l,c
+   646  000476  0E00               	movlw	high (?a_disassemblyFloat+4)
+   647  000478  6EEA               	movwf	fsr0h,c
+   648  00047A  EC4E  F005         	call	ftmul_f
+   649  00047E                     l25:
+   650                           ;main.c: 135: for (i = 0; i < places; i++) d/= 1
+      +                          0.0;
+   651  00047E  6AF3               	clrf	prodl,c
+   652  000480  6AF4               	clrf	prodh,c
+   653  000482                     l29:
+   654  000482  50F4               	movf	prodh,w,c
+   655  000484  0A80               	xorlw	128
+   656  000486  6E00               	movwf	btemp,c
+   657  000488  51D5               	movf	(?a_disassemblyFloat+1)^(__Lparam& (0+6528
+      +                          0)),w
+   658  00048A  0A80               	xorlw	128
+   659  00048C  5C00               	subwf	btemp,w,c
+   660  00048E  E102               	bnz	u85
+   661  000490  51D4               	movf	?a_disassemblyFloat^(__Lparam& (0+65280)),
+      +                          w
+   662  000492  5CF3               	subwf	prodl,w,c
+   663  000494                     u85:
+   664  000494  E20E               	bc	u80
+   665  000496  6A03               	clrf	btemp+3,c
+   666  000498  0E20               	movlw	32
+   667  00049A  6E04               	movwf	btemp+4,c
+   668  00049C  0E41               	movlw	65
+   669  00049E  6E05               	movwf	btemp+5,c
+   670  0004A0  0ED8               	movlw	low (?a_disassemblyFloat+4)
+   671  0004A2  6EE9               	movwf	fsr0l,c
+   672  0004A4  0E00               	movlw	high (?a_disassemblyFloat+4)
+   673  0004A6  6EEA               	movwf	fsr0h,c
+   674  0004A8  EC56  F005         	call	ftdiv_f
+   675  0004AC  4AF3               	infsnz	prodl,f,c
+   676  0004AE  2AF4               	incf	prodh,f,c
+   677  0004B0  D7E8               	goto	l29
+   678  0004B2                     u80:
+   679                           ;main.c: 136: tempfloat += d;
+   680  0004B2  C0D8  F003         	movff	?a_disassemblyFloat+4,btemp+3
+   681  0004B6  C0D9  F004         	movff	?a_disassemblyFloat+5,btemp+4
+   682  0004BA  C0DA  F005         	movff	?a_disassemblyFloat+6,btemp+5
+   683  0004BE  0EDE               	movlw	low (?a_disassemblyFloat+10)
+   684  0004C0  6EE9               	movwf	fsr0l,c
+   685  0004C2  0E00               	movlw	high (?a_disassemblyFloat+10)
+   686  0004C4  6EEA               	movwf	fsr0h,c
+   687  0004C6  EC46  F005         	call	ftadd_f
+   688                           ;main.c: 137: if (value < 0) tempfloat *= -1.0;
+   689  0004CA  0E00               	movlw	0
+   690  0004CC  6A03               	clrf	btemp+3,c
+   691  0004CE  6A04               	clrf	btemp+4,c
+   692  0004D0  6A05               	clrf	btemp+5,c
+   693  0004D2  C0D1  F000         	movff	?_disassemblyFloat,btemp
+   694  0004D6  C0D2  F001         	movff	?_disassemblyFloat+1,btemp+1
+   695  0004DA  C0D3  F002         	movff	?_disassemblyFloat+2,btemp+2
+   696  0004DE  ECC3  F004         	call	ftcmp
+   697  0004E2  0E00               	movlw	0
+   698  0004E4  E20C               	bc	L2
+   699  0004E6  6A03               	clrf	btemp+3,c
+   700  0004E8  0E80               	movlw	128
+   701  0004EA  6E04               	movwf	btemp+4,c
+   702  0004EC  0EBF               	movlw	191
+   703  0004EE  6E05               	movwf	btemp+5,c
+   704  0004F0  0EDE               	movlw	low (?a_disassemblyFloat+10)
+   705  0004F2  6EE9               	movwf	fsr0l,c
+   706  0004F4  0E00               	movlw	high (?a_disassemblyFloat+10)
+   707  0004F6  6EEA               	movwf	fsr0h,c
+   708  0004F8  EC4E  F005         	call	ftmul_f
+   709                           ;main.c: 138: while ((tens * 10.0) <= tempfloat)
+   710  0004FC                     l31:
+   711  0004FC  0E00               	movlw	0
+   712  0004FE                     L2:
+   713  0004FE  6E00               	movwf	btemp,c
+   714  000500  0E20               	movlw	32
+   715  000502  6E01               	movwf	btemp+1,c
+   716  000504  0E41               	movlw	65
+   717  000506  6E02               	movwf	btemp+2,c
+   718  000508  C0DB  F003         	movff	?a_disassemblyFloat+7,btemp+3
+   719  00050C  C0DC  F004         	movff	?a_disassemblyFloat+8,btemp+4
+   720  000510  C0DD  F005         	movff	?a_disassemblyFloat+9,btemp+5
+   721  000514  EC4F  F003         	call	ftmul
+   722  000518  C000  F003         	movff	btemp,btemp+3
+   723  00051C  C001  F004         	movff	btemp+1,btemp+4
+   724  000520  C002  F005         	movff	btemp+2,btemp+5
+   725  000524  C0DE  F000         	movff	?a_disassemblyFloat+10,btemp
+   726  000528  C0DF  F001         	movff	?a_disassemblyFloat+11,btemp+1
+   727  00052C  C0E0  F002         	movff	?a_disassemblyFloat+12,btemp+2
+   728  000530  ECC3  F004         	call	ftcmp
+   729  000534  E30E               	bnc	u100
+   730                           ;main.c: 139: {
+   731  000536  6A03               	clrf	btemp+3,c
+   732  000538  0E20               	movlw	32
+   733  00053A  6E04               	movwf	btemp+4,c
+   734  00053C  0E41               	movlw	65
+   735  00053E  6E05               	movwf	btemp+5,c
+   736  000540  0EDB               	movlw	low (?a_disassemblyFloat+7)
+   737  000542  6EE9               	movwf	fsr0l,c
+   738  000544  0E00               	movlw	high (?a_disassemblyFloat+7)
+   739  000546  6EEA               	movwf	fsr0h,c
+   740  000548  EC4E  F005         	call	ftmul_f
+   741                           ;main.c: 141: tenscount += 1;
+   742  00054C  4AF6               	infsnz	tblptrl,f,c
+   743  00054E  2AF7               	incf	tblptrh,f,c
+   744  000550  D7D5               	goto	l31
+   745  000552                     u100:
+   746                           ;main.c: 142: }
+   747  000552  0E7F               	movlw	127
+   748  000554  6E81               	movwf	3969,c	;volatile
+   749                           ;main.c: 144: for (i=0; i< tenscount; i++)
+   750  000556  6AF3               	clrf	prodl,c
+   751  000558  6AF4               	clrf	prodh,c
+   752  00055A                     l37:
+   753  00055A  50F4               	movf	prodh,w,c
+   754  00055C  0A80               	xorlw	128
+   755  00055E  6E00               	movwf	btemp,c
+   756  000560  50F7               	movf	tblptrh,w,c
+   757  000562  0A80               	xorlw	128
+   758  000564  5C00               	subwf	btemp,w,c
+   759  000566  E102               	bnz	u115
+   760  000568  50F6               	movf	tblptrl,w,c
+   761  00056A  5CF3               	subwf	prodl,w,c
+   762  00056C                     u115:
+   763  00056C  E240               	bc	u110
+   764                           ;main.c: 145: {
+   765  00056E  C0DE  F000         	movff	?a_disassemblyFloat+10,btemp
+   766  000572  C0DF  F001         	movff	?a_disassemblyFloat+11,btemp+1
+   767  000576  C0E0  F002         	movff	?a_disassemblyFloat+12,btemp+2
+   768  00057A  C0DB  F003         	movff	?a_disassemblyFloat+7,btemp+3
+   769  00057E  C0DC  F004         	movff	?a_disassemblyFloat+8,btemp+4
+   770  000582  C0DD  F005         	movff	?a_disassemblyFloat+9,btemp+5
+   771  000586  EC28  F004         	call	ftdiv
+   772  00058A  EC9C  F004         	call	fttol
+   773  00058E  C000  F0D6         	movff	btemp,?a_disassemblyFloat+2
+   774  000592  C001  F0D7         	movff	btemp+1,?a_disassemblyFloat+3
+   775                           ;main.c: 147: units = digit;
+   776  000596  C0D6  F0C0         	movff	?a_disassemblyFloat+2,_units
+   777  00059A  C0D7  F0C1         	movff	?a_disassemblyFloat+3,_units+1
+   778                           ;main.c: 148: tempfloat = tempfloat - ((float)di
+      +                          git * tens);
+   779  00059E  C0D6  F000         	movff	?a_disassemblyFloat+2,btemp
+   780  0005A2  C0D7  F001         	movff	?a_disassemblyFloat+3,btemp+1
+   781  0005A6  EC2F  F005         	call	awtoft
+   782  0005AA  C0DB  F003         	movff	?a_disassemblyFloat+7,btemp+3
+   783  0005AE  C0DC  F004         	movff	?a_disassemblyFloat+8,btemp+4
+   784  0005B2  C0DD  F005         	movff	?a_disassemblyFloat+9,btemp+5
+   785  0005B6  EC4F  F003         	call	ftmul
+   786  0005BA  C000  F003         	movff	btemp,btemp+3
+   787  0005BE  C001  F004         	movff	btemp+1,btemp+4
+   788  0005C2  C002  F005         	movff	btemp+2,btemp+5
+   789  0005C6  0EDE               	movlw	low (?a_disassemblyFloat+10)
+   790  0005C8  6EE9               	movwf	fsr0l,c
+   791  0005CA  0E00               	movlw	high (?a_disassemblyFloat+10)
+   792  0005CC  6EEA               	movwf	fsr0h,c
+   793  0005CE  EC44  F005         	call	ftsub_f
+   794                           ;main.c: 149: tens /= 10.0;
+   795  0005D2  6A03               	clrf	btemp+3,c
+   796  0005D4  0E20               	movlw	32
+   797  0005D6  6E04               	movwf	btemp+4,c
+   798  0005D8  0E41               	movlw	65
+   799  0005DA  6E05               	movwf	btemp+5,c
+   800  0005DC  0EDB               	movlw	low (?a_disassemblyFloat+7)
+   801  0005DE  6EE9               	movwf	fsr0l,c
+   802  0005E0  0E00               	movlw	high (?a_disassemblyFloat+7)
+   803  0005E2  6EEA               	movwf	fsr0h,c
+   804  0005E4  EC56  F005         	call	ftdiv_f
+   805  0005E8  4AF3               	infsnz	prodl,f,c
+   806  0005EA  2AF4               	incf	prodh,f,c
+   807  0005EC  D7B6               	goto	l37
+   808  0005EE                     u110:
+   809                           ;main.c: 150: }
+   810  0005EE  C0D1  F000         	movff	?_disassemblyFloat,btemp
+   811  0005F2  C0D2  F001         	movff	?_disassemblyFloat+1,btemp+1
+   812  0005F6  C0D3  F002         	movff	?_disassemblyFloat+2,btemp+2
+   813  0005FA  EC9C  F004         	call	fttol
+   814  0005FE  0E0A               	movlw	10
+   815  000600  6E02               	movwf	btemp+2,c
+   816  000602  6A03               	clrf	btemp+3,c
+   817  000604  EC0A  F005         	call	awdiv
+   818  000608  C004  F0BE         	movff	btemp+4,_tenths
+   819  00060C  C005  F0BF         	movff	btemp+5,_tenths+1
+   820                           ;main.c: 152: if (places <= 0) return;
+   821  000610  51D5               	movf	(?a_disassemblyFloat+1)^(__Lparam& (0+6528
+      +                          0)),w
+   822  000612  0A80               	xorlw	128
+   823  000614  0F80               	addlw	-128
+   824  000616  0E01               	movlw	1
+   825  000618  B4D8               	btfsc	status,2,c
+   826  00061A  5DD4               	subwf	?a_disassemblyFloat^(__Lparam& (0+65280))
+      +                          ,w
+   827  00061C  A0D8               	btfss	status,0,c
+   828  00061E  0012               	return	
+   829                           ;main.c: 153: for (i = 0; i < places; i++)
+   830  000620  6AF3               	clrf	prodl,c
+   831  000622  6AF4               	clrf	prodh,c
+   832  000624                     l42:
+   833  000624  50F4               	movf	prodh,w,c
+   834  000626  0A80               	xorlw	128
+   835  000628  6E00               	movwf	btemp,c
+   836  00062A  51D5               	movf	(?a_disassemblyFloat+1)^(__Lparam& (0+6528
+      +                          0)),w
+   837  00062C  0A80               	xorlw	128
+   838  00062E  5C00               	subwf	btemp,w,c
+   839  000630  E102               	bnz	u135
+   840  000632  51D4               	movf	?a_disassemblyFloat^(__Lparam& (0+65280)),
+      +                          w
+   841  000634  5CF3               	subwf	prodl,w,c
+   842  000636                     u135:
+   843  000636  E230               	bc	u130
+   844                           ;main.c: 154: {
+   845  000638  6A03               	clrf	btemp+3,c
+   846  00063A  0E20               	movlw	32
+   847  00063C  6E04               	movwf	btemp+4,c
+   848  00063E  0E41               	movlw	65
+   849  000640  6E05               	movwf	btemp+5,c
+   850  000642  0EDE               	movlw	low (?a_disassemblyFloat+10)
+   851  000644  6EE9               	movwf	fsr0l,c
+   852  000646  0E00               	movlw	high (?a_disassemblyFloat+10)
+   853  000648  6EEA               	movwf	fsr0h,c
+   854  00064A  EC4E  F005         	call	ftmul_f
+   855                           ;main.c: 156: digit = (int) tempfloat;
+   856  00064E  C0DE  F000         	movff	?a_disassemblyFloat+10,btemp
+   857  000652  C0DF  F001         	movff	?a_disassemblyFloat+11,btemp+1
+   858  000656  C0E0  F002         	movff	?a_disassemblyFloat+12,btemp+2
+   859  00065A  EC9C  F004         	call	fttol
+   860  00065E  C000  FFF6         	movff	btemp,tblptrl
+   861  000662  C001  FFF7         	movff	btemp+1,tblptrh
+   862                           ;main.c: 157: decUnits = digit;
+   863  000666  CFF6 F0B8          	movff	tblptrl,_decUnits
+   864  00066A  CFF7 F0B9          	movff	tblptrh,_decUnits+1
+   865                           ;main.c: 158: tempfloat = tempfloat - (float) di
+      +                          git;
+   866  00066E  CFF6 F000          	movff	tblptrl,btemp
+   867  000672  CFF7 F001          	movff	tblptrh,btemp+1
+   868  000676  EC2F  F005         	call	awtoft
+   869  00067A  C000  F003         	movff	btemp,btemp+3
+   870  00067E  C001  F004         	movff	btemp+1,btemp+4
+   871  000682  C002  F005         	movff	btemp+2,btemp+5
+   872  000686  0EDE               	movlw	low (?a_disassemblyFloat+10)
+   873  000688  6EE9               	movwf	fsr0l,c
+   874  00068A  0E00               	movlw	high (?a_disassemblyFloat+10)
+   875  00068C  6EEA               	movwf	fsr0h,c
+   876  00068E  EC44  F005         	call	ftsub_f
+   877  000692  4AF3               	infsnz	prodl,f,c
+   878  000694  2AF4               	incf	prodh,f,c
+   879  000696  D7C6               	goto	l42
+   880  000698                     u130:
+   881                           ;main.c: 159: }
+   882  000698  0E7F               	movlw	127
+   883  00069A  6E81               	movwf	3969,c	;volatile
+   884                           ;main.c: 161: }
+   885  00069C  0C7F               	retlw	127
+   886  00069E                     __end_of_disassemblyFloat:
+   887  000000                     
+   888  000000                     
+   889  000000                     
+   890  000000                     
+   891  000000                     
+   892  000000                     
+   893  000000                     
+   894  000000                     
+   895  000000                     
+   896  000000                     
+   897  000000                     
+   898  000000                     
+   899  000000                     
+   900  000000                     
+   901  000000                     
+   902  000000                     
+   903  000000                     
+   904  000000                     
+   905  000000                     
+   906  000000                     
+   907  000000                     
+   908  000000                     
+   909  000000                     
+   910  000000                     
+   911  000000                     
+   912  000000                     
+   913  000000                     
+   914  000000                     
+   915  000000                     
+   916  000000                     
+   917  000000                     
+   918  000000                     
+   919  000000                     
+   920  000000                     
+   921  000000                     
+   922  000000                     
+   923  000000                     
+   924  000000                     
+   925  000000                     
+   926  000000                     
+   927  000000                     
+   928  000000                     
+   929  000000                     
+   930  000000                     
+   931  000000                     
+   932  000000                     
+   933  000000                     
+   934  000000                     
+   935  000000                     
+   936  000000                     
+   937  000000                     
+   938  000000                     
+   939  000000                     
+   940  000000                     
+   941  000000                     
+   942  000000                     
+   943  000000                     
+   944  000000                     
+   945  000000                     
+   946  000000                     
+   947  000000                     
+   948  000000                     
+   949  000000                     
+   950  000000                     
+   951  000000                     
+   952  000000                     
+   953  000000                     
+   954  000000                     
+   955  000000                     
+   956  000000                     
+   957  000000                     
+   958  000000                     
+   959  000000                     
+   960  000000                     
+   961  000000                     
+   962  000000                     
+   963  000000                     
+   964  000000                     
+   965  000000                     
+   966  000000                     
+   967  000000                     
+   968  000000                     
+   969  000000                     
+   970  000000                     
+   971  000000                     
+   972  000000                     
+   973  000000                     
+   974  000000                     
+   975  000000                     
+   976  000000                     
+   977  000000                     
+   978  000000                     
+   979  000000                     
+   980  000000                     
+   981  000000                     
+   982  000000                     
+   983  000000                     
+   984  000000                     
+   985  000000                     
+   986  000000                     
+   987  000000                     
+   988  000000                     
+   989  000000                     
+   990  000000                     
+   991  000000                     
+   992  000000                     
+   993  000000                     
+   994  000000                     
+   995  000000                     
+   996  000000                     
+   997  000000                     
+   998  000000                     
+   999  000000                     
+  1000  000000                     
+  1001  000000                     
+  1002  000000                     
+  1003  000000                     
+  1004  000000                     
+  1005  000000                     
+  1006  000000                     
+  1007  000000                     
+  1008  000000                     
+  1009  000000                     
+  1010  000000                     
+  1011  000000                     
+  1012  000000                     
+  1013  000000                     
+  1014  000000                     
+  1015  000000                     
+  1016  000000                     
+  1017  000000                     
+  1018  000000                     
+  1019  000000                     
+  1020  000000                     
+  1021  000000                     
+  1022  000000                     
+  1023  000000                     
+  1024  000000                     
+  1025  000000                     
+  1026  000000                     
+  1027  000000                     
+  1028  000000                     
+  1029  000000                     
+  1030  000000                     
+  1031  000000                     
+  1032  000000                     
+  1033  000000                     
+  1034  000000                     
+  1035  000000                     
+  1036  000000                     
+  1037  000000                     
+  1038  000000                     
+  1039  000000                     
+  1040  000000                     
+  1041  000000                     
+  1042  000000                     
+  1043  000000                     
+  1044  000000                     
+  1045  000000                     
+  1046  000000                     
+  1047  000000                     
+  1048  000000                     
+  1049  000000                     
+  1050  000000                     
+  1051  000000                     
+  1052  000000                     
+  1053  000000                     
+  1054  000000                     
+  1055  000000                     
+  1056  000000                     
+  1057  000000                     
+  1058  000000                     
+  1059  000000                     
+  1060  000000                     
+  1061  000000                     
+  1062  000000                     
+  1063  000000                     
+  1064  000000                     
+  1065  000000                     
+  1066  000000                     
+  1067  000000                     
+  1068  000000                     
+  1069  000000                     
+  1070  000000                     
+  1071  000000                     
+  1072  000000                     
+  1073  000000                     
+  1074  000000                     
+  1075  000000                     
+  1076  000000                     
+  1077  000000                     
+  1078  000000                     
+  1079  000000                     
+  1080  000000                     
+  1081  000000                     
+  1082  000000                     
+  1083  000000                     
+  1084  000000                     
+  1085  000000                     
+  1086  000000                     
+  1087  000000                     
+  1088  000000                     
+  1089  000000                     
+  1090  000000                     
+  1091  000000                     
+  1092  000000                     
+  1093  000000                     
+  1094  000000                     
+  1095  000000                     
+  1096  000000                     
+  1097  000000                     
+  1098  000000                     
+  1099  000000                     
+  1100  000000                     
+  1101  000000                     
+  1102  000000                     
+  1103  000000                     
+  1104  000000                     
+  1105  000000                     
+  1106  000000                     
+  1107  000000                     
+  1108  000000                     
+  1109  000000                     
+  1110  000000                     
+  1111  000000                     
+  1112  000000                     
+  1113  000000                     
+  1114  000000                     
+  1115  000000                     
+  1116  000000                     
+  1117  000000                     
+  1118  000000                     
+  1119  000000                     
+  1120  000000                     
+  1121  000000                     
+  1122  000000                     
+  1123  000000                     
+  1124  000000                     
+  1125  000000                     
+  1126  000000                     
+  1127  000000                     
+  1128  000000                     
+  1129  000000                     
+  1130  000000                     
+  1131  000000                     
+  1132  000000                     
+  1133  000000                     
+  1134  000000                     
+  1135  000000                     
+  1136  000000                     
+  1137  000000                     
+  1138                           
+  1139                           	psect	config
+  1140                           ;main.c: 24: static char Segment[3] = {0x06,0x0A
+      +                          ,0x0C};
+  1141                           ;main.c: 25: static char ColCount=0x00;
+  1142                           ;main.c: 26: int hundrends = 0;
+  1143                           ;main.c: 27: int tenths = 0;
+  1144                           ;main.c: 28: int units = 0;
+  1145                           ;main.c: 29: int decUnits = 0;
+  1146                           ;main.c: 30: float result;
+  1147                           ;main.c: 31: unsigned int i;
+  1148                           ;main.c: 33: asm("\tpsect config,class=CONFIG");
+      +                           asm("global config_word" "1"); asm("\torg (""1"
+      +                          "-1)*2"); asm("config_word" "1"":"); asm("\tdw "
+      +                          "0xF1FF");
+  1149  300000                     	org	0	;#
+  1150  300000                     config_word1:
+  1151                           ;#
+  1152  300000  F1FF               	dw	61951	;#
+  1153                           ;main.c: 34: asm("\tpsect config,class=CONFIG");
+      +                           asm("global config_word" "2"); asm("\torg (""2"
+      +                          "-1)*2"); asm("config_word" "2"":"); asm("\tdw "
+      +                          "0xFFFF & 0xFEFF & 0xFFFE");
+  1154  300002                     	org	2	;#
+  1155  300002                     config_word2:
+  1156                           ;#
+  1157  300002  FEFE               	dw	65278	;#
+  1158                           ;main.c: 35: asm("\tpsect config,class=CONFIG");
+      +                           asm("global config_word" "3"); asm("\torg (""3"
+      +                          "-1)*2"); asm("config_word" "3"":"); asm("\tdw "
+      +                          "0xFFFF");
+  1159  300004                     	org	4	;#
+  1160  300004                     config_word3:
+  1161                           ;#
+  1162  300004  FFFF               	dw	65535	;#
+  1163                           ;main.c: 36: asm("\tpsect config,class=CONFIG");
+      +                           asm("global config_word" "4"); asm("\torg (""4"
+      +                          "-1)*2"); asm("config_word" "4"":"); asm("\tdw "
+      +                          "0xFF7F & 0xFFFB & 0xFFFE");
+  1164  300006                     	org	6	;#
+  1165  300006                     config_word4:
+  1166                           ;#
+  1167  300006  FF7A               	dw	65402	;#
+  1168                           ;main.c: 37: asm("\tpsect config,class=CONFIG");
+      +                           asm("global config_word" "5"); asm("\torg (""5"
+      +                          "-1)*2"); asm("config_word" "5"":"); asm("\tdw "
+      +                          "0xFFFF");
+  1169  300008                     	org	8	;#
+  1170  300008                     config_word5:
+  1171                           ;#
+  1172  300008  FFFF               	dw	65535	;#
+  1173                           ;main.c: 38: asm("\tpsect config,class=CONFIG");
+      +                           asm("global config_word" "6"); asm("\torg (""6"
+      +                          "-1)*2"); asm("config_word" "6"":"); asm("\tdw "
+      +                          "0xFFFF");
+  1174  30000A                     	org	10	;#
+  1175  30000A                     config_word6:
+  1176                           ;#
+  1177  30000A  FFFF               	dw	65535	;#
+  1178                           
+  1179                           	psect	intcode
+  1180  000008  CFFA F0FF          	movff	pclath,saved_regsh+26
+  1181  00000C  EF85  F001         	goto	save
+  1182                           
+  1183                           	psect	bigbss
+  1184  0000E4                     _ColCount:
+  1185  0000E4                     	ds	1
+  1186  000000                     
+  1187  000000                     
+  1188  000000                     
+  1189  000000                     
+  1190  000000                     
+  1191  000000                     
+  1192  000000                     
+  1193  000000                     
+  1194  000000                     
+  1195  000000                     
+  1196  000000                     
+  1197  000000                     
+  1198  000000                     
+  1199  000000                     
+  1200  000000                     
+  1201  000000                     
+  1202  000000                     
+  1203  000000                     
+  1204  000000                     
+  1205  000000                     
+  1206  000000                     
+  1207  000000                     
+  1208  000000                     
+  1209  000000                     
+  1210  000000                     
+  1211  000000                     
+  1212  000000                     
+  1213  000000                     
+  1214  000000                     
+  1215  000000                     
+  1216  000000                     
+  1217  000000                     
+  1218  000000                     
+  1219  000000                     
+  1220  000000                     
+  1221  000000                     
+  1222  000000                     
+  1223  000000                     
+  1224  000000                     
+  1225  000000                     
+  1226  000000                     
+  1227  000000                     
+  1228  000000                     
+  1229  000000                     
+  1230  000000                     
+  1231  000000                     
+  1232  000000                     
+  1233  000000                     
+  1234  000000                     
+  1235  000000                     
+  1236  000000                     
+  1237  000000                     
+  1238  000000                     
+  1239  000000                     
+  1240  000000                     
+  1241  000000                     
+  1242  000000                     
+  1243  000000                     
+  1244  000000                     
+  1245  000000                     
+  1246  000000                     
+  1247  000000                     
+  1248  000000                     
+  1249  000000                     
+  1250  000000                     
+  1251  000000                     
+  1252  000000                     
+  1253  000000                     
+  1254  000000                     
+  1255  000000                     
+  1256  000000                     
+  1257  000000                     
+  1258  000000                     
+  1259  000000                     
+  1260  000000                     
+  1261  000000                     
+  1262  000000                     
+  1263  000000                     
+  1264  000000                     
+  1265  000000                     
+  1266  000000                     
+  1267  000000                     
+  1268  000000                     
+  1269  000000                     
+  1270  000000                     
+  1271  000000                     
+  1272                           
+  1273                           	psect	bss
+  1274  0000B8                     _decUnits:
+  1275  0000B8                     	ds	2
+  1276  0000B8                     _hundrends:
+  1277  0000B8                     	ds	2
+  1278  0000B8                     _i:
+  1279  0000B8                     	ds	2
+  1280  0000B8                     _tenths:
+  1281  0000B8                     	ds	2
+  1282  0000B8                     _units:
+  1283  0000B8                     	ds	2
+  1284  0000B8                     _result:
+  1285  0000B8                     	ds	3
+  1286                           
+  1287                           	psect	temp
+  1288  000000                     btemp:
+  1289  000000                     	ds	15
+  1290                           
+  1291                           	psect	intsave_regs
+  1292  0000E5                     saved_regsh:
+  1293  0000E5                     	ds	27
+  1294                           pclath	equ	0xFFA
+  1295                           tblptrh	equ	0xFF7
+  1296                           tblptrl	equ	0xFF6
+  1297                           tablat	equ	0xFF5
+  1298                           prodh	equ	0xFF4
+  1299                           prodl	equ	0xFF3
+  1300                           intcon	equ	0xFF2
+  1301                           postinc0	equ	0xFEE
+  1302                           fsr0h	equ	0xFEA
+  1303                           fsr0l	equ	0xFE9
+  1304                           wreg	equ	0xFE8
+  1305                           fsr1h	equ	0xFE2
+  1306                           fsr1l	equ	0xFE1
+  1307                           indf2	equ	0xFDF
+  1308                           fsr2h	equ	0xFDA
+  1309                           fsr2l	equ	0xFD9
+  1310                           status	equ	0xFD8
+
+
+HI-TECH Software PICC-18 Macro Assembler V9.51PL3
+Symbol Table                                           Fri Feb 17 15:37:50 2017
+
+                         l4 0134                           l7 0184  
+                         _i 00BC                          l22 0416  
+                        l14 037E                          l31 04FC  
+                        l16 039C                          l25 047E  
+                        l42 0624                          l19 03A6  
+                        l37 055A                          l29 0482  
+                        u80 04B2                          u85 0494  
+                       u100 0552                         u110 05EE  
+                       u130 0698                         u115 056C  
+                       u135 0636                         _ISR 028C  
+                       save 030A                         wreg 000FE8  
+                  _decUnits 00B8                        f3483 00C5  
+                      _Init 0266                        _main 012C  
+                      fsr0h 000FEA                        fsr1h 000FE2  
+                      fsr0l 000FE9                        fsr2h 000FDA  
+                      fsr1l 000FE1                        indf2 000FDF  
+                      fsr2l 000FD9                        btemp 0000  
+                      awdiv 0A14                        ftcmp 0986  
+                      ftdiv 0850                        ftmul 069E  
+                      fttol 0938             __end_of_Display 0422  
+                      prodh 000FF4                        prodl 000FF3  
+                      start 0010                  used_btemp0 0001  
+                used_btemp1 0001                  used_btemp2 0001  
+                used_btemp3 0001                  used_btemp4 0001  
+                used_btemp5 0001                  used_btemp6 0001  
+                used_btemp7 0001                  used_btemp8 0001  
+                used_btemp9 0001                       _units 00C0  
+                     awtoft 0A5E                       pclath 000FFA  
+                     tablat 000FF5    __end_of_disassemblyFloat 069E  
+                   _DelayMs 09EC                       lwtoft 0A6C  
+                     status 000FD8                    ?_DelayMs 00D1  
+                   _Display 0374                     _SegCode 0100  
+        ?a_disassemblyFloat 00D4                   _hundrends 00BA  
+                   _Segment 00E1                     __Lparam 00C5  
+                   __ramtop 0100                 config_word1 0000  
+               config_word2 0002                 config_word3 0004  
+               config_word4 0006                 config_word5 0008  
+               config_word6 000A                      ?a_main 00C5  
+              __end_of_Init 0276                __end_of_main 0266  
+                   int_func 028C                      _Column 010B  
+               used_btemp10 0001                 used_btemp11 0001  
+               used_btemp12 0001                 used_btemp13 0001  
+               used_btemp14 0001                     postinc0 000FEE  
+          _disassemblyFloat 0424                 __end_of_ISR 0374  
+                    _result 00C2                      _tenths 00BE  
+                  _Adc_Init 0A3E                    _Adc_Read 0A4E  
+                    ftadd_f 0A8C                      ftdiv_f 0AAC  
+         ?_disassemblyFloat 00D1                      ftmul_f 0A9C  
+                    ftsub_f 0A88                      tblptrh 000FF7  
+                    tblptrl 000FF6                      restore 029C  
+                  _ColCount 00E4                   _Init_TMR0 0276  
+         __end_of_Init_TMR0 028C                  saved_regsh 00E5  
+                 saved_bsrh 000F  

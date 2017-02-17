@@ -1,0 +1,337 @@
+[p GLOBOPT AUTOSTATIC LFSROK SPACEOPT EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F1320 ]
+"96 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c
+[v F1168 `(v  1 t 0 ]
+"15 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.c
+[v _Adc_Init `(v  1 e 0 0 ]
+"24
+[v _Adc_Read `(ui  1 e 2 0 ]
+"18 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c
+[v _DelayMs `(v  1 e 0 0 ]
+"42 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c
+[v _main `(v  1 e 0 0 ]
+"70
+[v _Init `(v  1 e 0 0 ]
+"80
+[v _Init_TMR0 `(v  1 e 0 0 ]
+"96
+[v _ISR `I(v  1 e 0 0 ]
+"107
+[v _Display `(v  1 e 0 0 ]
+"126
+[v _disassemblyFloat `(v  1 e 0 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftadd.c
+[v ___asftadd `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftdiv.c
+[v ___asftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftmul.c
+[v ___asftmul `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftsub.c
+[v ___asftsub `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"13 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\float.c
+[v ___ftunpack `(uc  1 e 1 0 ]
+"33
+[v ___ftpack `(v  1 e 0 0 ]
+"17 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"19 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"18 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"17 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"21 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c
+[v _SegCode `DC[11]uc  1 e 11 0 ]
+"23
+[v _Column `DC[3]uc  1 e 3 0 ]
+"24
+[v _Segment `[3]uc  1 s 3 @90 ]
+"25
+[v _ColCount `uc  1 s 1 @85 ]
+"27
+[v _tenths `i  1 e 2 @88 ]
+"28
+[v _units `i  1 e 2 @83 ]
+"29
+[v _decUnits `i  1 e 2 @86 ]
+"30
+[v _result `f  1 e 3 @80 ]
+"31
+[v _i `ui  1 e 2 @78 ]
+"61 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\include\pic18f1220.h
+[v _TMR0H `VNuc  1 e 1 @4055 ]
+"62
+[v _TMR0L `VNuc  1 e 1 @4054 ]
+"64
+[v _OSCCON `VNuc  1 e 1 @4051 ]
+"75
+[v _ADRES `VNui  1 e 2 @4035 ]
+"78
+[v _ADCON0 `VNuc  1 e 1 @4034 ]
+"79
+[v _ADCON1 `Nuc  1 e 1 @4033 ]
+"80
+[v _ADCON2 `Nuc  1 e 1 @4032 ]
+"108
+[v _OSCTUNE `Nuc  1 e 1 @3995 ]
+"109
+[v _TRISB `VNuc  1 e 1 @3987 ]
+"110
+[v _TRISA `VNuc  1 e 1 @3986 ]
+"113
+[v _PORTB `VNuc  1 e 1 @3969 ]
+"114
+[v _PORTA `VNuc  1 e 1 @3968 ]
+"124
+[v _TMR0IF `VNb  1 e 0 @32658 ]
+"127
+[v _TMR0IE `Nb  1 e 0 @32661 ]
+"128
+[v _PEIE `Nb  1 e 0 @32662 ]
+"129
+[v _GIE `Nb  1 e 0 @32663 ]
+"158
+[v _T0PS0 `Nb  1 e 0 @32424 ]
+"159
+[v _T0PS1 `Nb  1 e 0 @32425 ]
+"160
+[v _T0PS2 `Nb  1 e 0 @32426 ]
+"161
+[v _PSA `Nb  1 e 0 @32427 ]
+"163
+[v _T0CS `Nb  1 e 0 @32429 ]
+"164
+[v _T08BIT `Nb  1 e 0 @32430 ]
+"165
+[v _TMR0ON `Nb  1 e 0 @32431 ]
+"220
+[v _ADON `Nb  1 e 0 @32272 ]
+"221
+[v _GODONE `VNb  1 e 0 @32273 ]
+"53
+"138
+"148
+"158
+"42 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c
+[v _main `(v  1 e 0 0 ]
+{
+"65
+} 5
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+{
+"17
+[v _f1 `f  1 a 3 0 ]
+"16
+[v _c `ui  1 p 2 0 ]
+"24
+} 3
+"126 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c
+[v _disassemblyFloat `(v  1 e 0 0 ]
+{
+"128
+[v _places `i  1 a 2 12 ]
+"130
+[v _tenscount `i  1 a 2 14 ]
+"127
+[v _digit `i  1 a 2 16 ]
+"131
+[v _i `i  1 a 2 18 ]
+"133
+[v _d `f  1 a 3 20 ]
+"129
+[v _tens `f  1 a 3 23 ]
+"132
+[v _tempfloat `f  1 a 3 26 ]
+"126
+[v _value `f  1 p 3 0 ]
+"161
+} 29
+"18 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c
+[v _DelayMs `(v  1 e 0 0 ]
+{
+[v _cnt `ui  1 p 2 0 ]
+"44
+} 0
+"24 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.c
+[v _Adc_Read `(ui  1 e 2 0 ]
+{
+"30
+} 0
+"15
+[v _Adc_Init `(v  1 e 0 0 ]
+{
+"21
+} 0
+"70 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c
+[v _Init `(v  1 e 0 0 ]
+{
+"75
+} 0
+"80
+[v _Init_TMR0 `(v  1 e 0 0 ]
+{
+"91
+} 0
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+{
+"17
+[v _f1 `f  1 a 3 0 ]
+"16
+[v _c `i  1 p 2 0 ]
+"28
+} 3
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftdiv.c
+[v ___asftdiv `(f  1 e 3 0 ]
+{
+[v _f1p `*.bf  1 p 2 0 ]
+[v _f2 `f  1 p 3 2 ]
+"7
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftmul.c
+[v ___asftmul `(f  1 e 3 0 ]
+{
+[v _f1p `*.bf  1 p 2 0 ]
+[v _f2 `f  1 p 3 2 ]
+"7
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+{
+[v _ff1 `f  1 p 3 0 ]
+[v _ff2 `f  1 p 3 3 ]
+"13
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftadd.c
+[v ___asftadd `(f  1 e 3 0 ]
+{
+[v _f1p `*.bf  1 p 2 0 ]
+[v _f2 `f  1 p 3 2 ]
+"7
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+{
+[v _dividend `i  1 p 2 0 ]
+[v _divisor `i  1 p 2 2 ]
+"37
+} 0
+"5 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\asftsub.c
+[v ___asftsub `(f  1 e 3 0 ]
+{
+[v _f1p `*.bf  1 p 2 0 ]
+[v _f2 `f  1 p 3 2 ]
+"7
+} 0
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+{
+"17
+[v _exp1 `uc  1 a 1 0 ]
+"18
+[v _lval `ul  1 a 4 1 ]
+"16
+[v _f1 `f  1 p 3 0 ]
+"40
+} 5
+"17 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+{
+[v _f1 `f  1 p 3 0 ]
+[v _f2 `f  1 p 3 3 ]
+"20
+} 0
+"16 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+{
+[v _f1 `f  1 p 3 0 ]
+"20
+} 0
+"19 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+{
+"20
+[v _exp2 `uc  1 a 1 0 ]
+[v _exp1 `uc  1 a 1 1 ]
+"21
+[v _f3 `f  1 a 3 2 ]
+"19
+[v _f1 `f  1 p 3 0 ]
+[v _f2 `f  1 p 3 3 ]
+"20
+[v _sign2 `uc  1 a 1 prodh ]
+[v _sign2 `uc  1 a 1 fsr2l ]
+"45
+} 5
+"18 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+{
+"19
+[v _exp1 `uc  1 a 1 0 ]
+[v _cntr `uc  1 a 1 1 ]
+"20
+[v _f3 `f  1 a 3 2 ]
+"18
+[v _f1 `f  1 p 3 0 ]
+[v _f2 `f  1 p 3 3 ]
+"46
+} 5
+"17 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+{
+"18
+[v _exp2 `uc  1 a 1 0 ]
+[v _exp1 `uc  1 a 1 1 ]
+"17
+[v _f1 `f  1 p 3 0 ]
+[v _f2 `f  1 p 3 3 ]
+"83
+} 2
+"33 C:\Program Files\HI-TECH Software\PICC-18\PRO\9.63\sources\float.c
+[v ___ftpack `(v  1 e 0 0 ]
+{
+[v _arg `*.bum  1 p 2 0 ]
+[v _exp `uc  1 p 1 2 ]
+"55
+} 0
+"13
+[v ___ftunpack `(uc  1 e 1 0 ]
+{
+[v _arg `*.bum  1 p 2 0 ]
+[v _exp `*.buc  1 p 2 2 ]
+"14
+[v _sign `uc  1 a 1 fsr1l ]
+[v _sign `uc  1 a 1 fsr2l ]
+"27
+} 0
+"96 C:\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.c
+[v _ISR `I(v  1 e 0 0 ]
+{
+"104
+} 0
+"107
+[v _Display `(v  1 e 0 0 ]
+{
+"112
+[v __dcnt `uc  1 a 1 0 ]
+"114
+[v __dcnt `uc  1 a 1 1 ]
+"120
+[v __dcnt `uc  1 a 1 2 ]
+"123
+} 3

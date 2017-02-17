@@ -1,0 +1,57 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[; ;delay.h: 72: extern void DelayMs(unsigned int);
+
+"18 D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.c
+[v _DelayMs `(v 1 ef1`ui ]
+{
+[v _cnt `ui 1 r1 ]
+[; ;delay.c: 17: void DelayMs(unsigned int cnt)
+
+[; ;delay.c: 18: {
+
+[e :U _DelayMs ]
+[f ]
+"35
+[v _i `uc 1 a ]
+[; ;delay.c: 35: unsigned char i;
+
+[; ;delay.c: 36: do {
+
+"36
+[e :U 4 ]
+[; ;delay.c: 37: i = 3;
+
+"37
+[e = _i -> -> 3 `i `uc ]
+[; ;delay.c: 38: do {
+
+"38
+[e :U 7 ]
+[; ;delay.c: 39: { unsigned char _dcnt; _dcnt = (220)/(12*1000/(8*1000))|1; while(--_dcnt != 0) continue; };
+
+"39
+{
+[v __dcnt `uc 1 a ]
+[e = __dcnt -> | / -> 220 `i / * -> 12 `i -> 1000 `i * -> 8 `i -> 1000 `i -> 1 `i `uc ]
+[e $U 8  ]
+[e :U 9 ]
+[e $U 8  ]
+[e :U 8 ]
+[e $ != -> =- __dcnt -> -> 1 `i `uc `i -> 0 `i 9  ]
+[e :U 10 ]
+}
+"40
+[; ;delay.c: 40: } while(--i);
+
+[e $ != -> =- _i -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 7  ]
+[e :U 6 ]
+"41
+[; ;delay.c: 41: } while(--cnt);
+
+[e $ != =- _cnt -> -> 1 `i `ui -> -> 0 `i `ui 4  ]
+[e :U 3 ]
+"44
+[; ;delay.c: 44: }
+
+[e :UE 1 ]
+}

@@ -1,0 +1,26 @@
+_Init_TMR0: CODE, 3236 0 22
+___asftadd: CODE, 2882 0 58
+_Display: CODE, 2012 0 138
+_disassemblyFloat: CODE, 276 0 654
+_main: CODE, 1236 0 254
+_Adc_Init: CODE, 3258 0 16
+___ftdiv: CODE, 1694 0 164
+___awdiv: CODE, 2286 0 120
+___ftmul: CODE, 1858 0 154
+___asftmul: CODE, 2998 0 58
+___ftneg: CODE, 3306 0 14
+___awtoft: CODE, 2630 0 106
+___ftpack: CODE, 1490 0 204
+_ISR: CODE, 3110 0 48
+___asftdiv: CODE, 2940 0 58
+_Init: CODE, 3274 0 16
+___fttol: CODE, 2150 0 136
+___asftsub: CODE, 2824 0 58
+___ftge: CODE, 2736 0 88
+_Adc_Read: CODE, 3290 0 16
+___ftunpack: CODE, 2520 0 110
+_DelayMs: CODE, 3204 0 32
+___ftsub: CODE, 3158 0 46
+___ftadd: CODE, 930 0 306
+___lwtoft: CODE, 3056 0 54
+Total: 2930

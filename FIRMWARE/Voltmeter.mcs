@@ -1,0 +1,497 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.obj
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File001]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.sdb
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File002]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.rlf
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File003]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.lst
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File004]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.obj
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File005]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.sdb
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File006]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.rlf
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File007]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.lst
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File008]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.obj
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File009]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.sdb
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File010]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.rlf
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File011]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.lst
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File012]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.obj
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File013]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.sdb
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File014]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.rlf
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File015]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\adc.lst
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File016]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.obj
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File017]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.sdb
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File018]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.rlf
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File019]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\delay.lst
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File020]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.obj
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File021]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.sdb
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File022]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.rlf
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File023]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\main.lst
+Folder=Intermediary
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File024]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.cof
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File025]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.hex
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File026]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.sym
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File027]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.map
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File028]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.hxl
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File029]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\startup.lst
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File030]
+Location=C:\Users\Administrator\Documents\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\startup.rlf
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File031]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.cof
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File032]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.hex
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File033]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.sym
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File034]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.map
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File035]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\Voltmeter.hxl
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File036]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\startup.lst
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=
+[File037]
+Location=D:\MANOS\DXP\MICROCHIP\18F1320 VOLTMETER\FIRMWARE\startup.rlf
+Folder=Output
+DeviceName=PIC18F1320
+LanguageToolSuiteID={507D93FD-16F1-4270-980F-0C7C0207E6D3}
+LanguageToolID={0F51667C-2BAF-4EF8-A2C9-AB83788A793D}
+LanguageToolLocation=C:\Program Files (x86)\HI-TECH Software\PICC-18\STD\9.51\bin\picc18.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)||$(LKRDIR)||
+SOLK=<src>|adc.c|delay.c|main.c||<obj>||<lib>||<lkr>||
+SuiteArgsString=
+ToolArgsString=C6=31 DB=0 DC=9 DF=0 DD=1 C2=0 C3=0 DE=1 D7=1 11E=0 121=0 122=0 123=0 124=0 125=0 11F=-1 C9=5,8 FE=29 EC=1 F0=0 EF=1 EE=0 104=0 E9= C4=0 F2= F3= F4= F8=0 F9=0 FA=0 FB=0 C0=0 C1=0 BD=0 BC=0 BB=0 BF=0 BE=0 B8= 101=0 103= 102=0 BA= FF=0 100=0 106=0 109=0 10A=1 10B=0 10C=0 10E=0 10F=1 110=0 118=1 116=0 117= 10D=0 114=-1 113=-1 111=0 115=-1 F5=0 E5=1 E7=0 E8=0 126=0 F1=0 F6= F7= B9=-1 107=0
+TraceCmdString=
+DebugOptions=

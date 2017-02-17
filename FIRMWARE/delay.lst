@@ -1,0 +1,159 @@
+
+
+HI-TECH Software PICC-18 Macro Assembler V9.51PL3
+                                                       Fri Feb 17 15:37:50 2017
+
+
+     1                           	processor	18F1320
+     2                           	opt	pw 80
+     3                           	psect	text,global,reloc=2,class=CODE,delta=1
+     4                           	psect	intsave_regs,global,class=BIGRAM,space=1,
+      +                          delta=1
+     5  000000                     
+     6  000000                     
+     7  000000                     
+     8  000000                     
+     9  000000                     
+    10  000000                     
+    11  000000                     
+    12  000000                     
+    13  000000                     
+    14  000000                     
+    15  000000                     
+    16  000000                     
+    17  000000                     
+    18  000000                     
+    19  000000                     
+    20  000000                     
+    21  000000                     
+    22  000000                     
+    23  000000                     
+    24  000000                     
+    25  000000                     
+    26  000000                     
+    27  000000                     
+    28  000000                     
+    29  000000                     
+    30  000000                     
+    31  000000                     
+    32  000000                     
+    33  000000                     
+    34  000000                     
+    35  000000                     
+    36  000000                     
+    37  000000                     
+    38  000000                     
+    39  000000                     
+    40  000000                     
+    41  000000                     
+    42  000000                     
+    43  000000                     
+    44  000000                     
+    45  000000                     
+    46  000000                     
+    47  000000                     
+    48  000000                     
+    49  000000                     
+    50  000000                     
+    51  000000                     
+    52  000000                     
+    53  000000                     
+    54  000000                     
+    55  000000                     
+    56  000000                     
+    57  000000                     
+    58  000000                     
+    59  000000                     
+    60  000000                     
+    61  000000                     
+    62  000000                     
+    63  000000                     
+    64  000000                     
+    65  000000                     
+    66  000000                     
+    67  000000                     
+    68  000000                     
+    69  000000                     
+    70  000000                     
+    71  000000                     
+    72  000000                     
+    73  000000                     
+    74  000000                     
+    75  000000                     
+    76  000000                     
+    77  000000                     
+    78  000000                     
+    79  000000                     
+    80  000000                     
+    81  000000                     
+    82  000000                     
+    83  000000                     
+    84  000000                     
+    85  000000                     
+    86  000000                     
+    87  000000                     
+    88  000000                     
+    89  000000                     
+    90  000000                     
+    91  000000                     
+    92  000000                     
+    93  000000                     
+    94                           ;delay.h: 72: extern void DelayMs(unsigned int);
+    95                           ;       param _cnt assigned to ?_DelayMs+0
+    96  000000                     _DelayMs$cnt	set	?_DelayMs
+    97                           
+    98                           	psect	text
+    99                           ;delay.c: 17: void DelayMs(unsigned int cnt)
+   100                           ;delay.c: 18: {
+   101  0009EA  00D1               	dw	?_DelayMs
+   102  0009EC                     _DelayMs:
+   103  000000                     
+   104  0009EC                     l4:
+   105                           ;delay.c: 35: unsigned char i;
+   106                           ;delay.c: 37: i = 3;
+   107  0009EC  0E03               	movlw	3
+   108  0009EE  6EE1               	movwf	fsr1l,c
+   109  0009F0                     l7:
+   110                           ;delay.c: 38: do {
+   111                           ;delay.c: 39: { unsigned char _dcnt; _dcnt = (22
+      +                          0)/(12*1000/(8*1000))|1; while(--_dcnt != 0) con
+      +                          tinue; };
+   112  0009F0  0EDD               	movlw	221
+   113  0009F2  6ED9               	movwf	fsr2l,c
+   114  0009F4                     l9:
+   115  0009F4  2ED9               	decfsz	fsr2l,f,c
+   116  0009F6  D7FE               	goto	l9
+   117                           ;delay.c: 40: } while(--i);
+   118  0009F8  2EE1               	decfsz	fsr1l,f,c
+   119  0009FA  D7FA               	goto	l7
+   120                           ;delay.c: 41: } while(--cnt);
+   121  0009FC  0ED1               	movlw	low ?_DelayMs
+   122  0009FE  6EE1               	movwf	fsr1l,c
+   123  000A00  0E00               	movlw	high ?_DelayMs
+   124  000A02  6EE2               	movwf	fsr1h,c
+   125  000A04  06E6               	decf	postinc1,f,c
+   126  000A06  0E00               	movlw	0
+   127  000A08  5AE5               	subwfb	postdec1,f,c
+   128  000A0A  50E6               	movf	postinc1,w,c
+   129  000A0C  10E5               	iorwf	postdec1,w,c
+   130  000A0E  B4D8               	btfsc	status,2,c
+   131  000A10  0012               	return	
+   132  000A12  D7EC               	goto	l4
+   133                           ;delay.c: 44: }
+   134  000A14                     __end_of_DelayMs:
+   135                           postinc1	equ	0xFE6
+   136                           postdec1	equ	0xFE5
+   137                           fsr1h	equ	0xFE2
+   138                           fsr1l	equ	0xFE1
+   139                           fsr2l	equ	0xFD9
+   140                           status	equ	0xFD8
+
+
+HI-TECH Software PICC-18 Macro Assembler V9.51PL3
+Symbol Table                                           Fri Feb 17 15:37:50 2017
+
+              l4 09EC                l7 09F0                l9 09F4  
+__end_of_DelayMs 0A14             fsr1h 000FE2             fsr1l 000FE1  
+           fsr2l 000FD9          _DelayMs 09EC            status 000FD8  
+       ?_DelayMs 00D1          __Lparam 00C5          __ramtop 0100  
+        postdec1 000FE5          postinc1 000FE6  
